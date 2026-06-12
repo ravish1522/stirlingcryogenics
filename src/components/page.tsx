@@ -7,13 +7,13 @@ import Contact from "@/components/Contact";
 
 export default function HomePage() {
   return (
-      <>
-        <Hero />
-        <Stats />
-        <Applications />
-        <WhyChoose />
-        <Testimonials />
-        <Contact />
-      </>
+    <>
+      <Hero />
+      <Stats />
+      <Applications />
+      <WhyChoose />
+      <Testimonials />
+      <Contact />
+    </>
   );
 }
