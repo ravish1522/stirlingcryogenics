@@ -1,41 +1,38 @@
 "use client";
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { ChevronDown, ChevronLeft, ChevronRight, X, SlidersHorizontal } from "lucide-react";
+import { ChevronDown, ChevronLeft, ChevronRight, X, SlidersHorizontal, ImageOff } from "lucide-react";
+import { PRODUCTS, PRODUCT_BRANDS } from "@/data/products";
 
-const BRANDS = ["CompAir", "Fabrum", "Parker", "Atlas Copco"];
+const BRANDS = PRODUCT_BRANDS;
+
+// Category list/order preserved exactly as before; counts are now derived from
+// the centralized product data instead of being hardcoded.
+const CATEGORY_NAMES = [
+    "Compressed Air Drains",
+    "Compressed Air Dryers",
+    "Filters",
+    "Gas Generator",
+    "Service Kits",
+    "Water Chillers & Cooling Systems",
+    "Medical Oxygen Plant",
+    "Hydrogen + Zero Air Generator",
+    "Hydrogen Generator",
+    "Nitrogen Generator",
+    "Zero Air Generator",
+    "Accessories",
+    "Green Hydrogen",
+];
 
 const CATEGORIES = [
-    { name: "All", count: null },
-    { name: "Compressed Air Drains", count: 5 },
-    { name: "Compressed Air Dryers", count: 12 },
-    { name: "Filters", count: 10 },
-    { name: "Gas Generator", count: 32 },
-    { name: "Service Kits", count: 10 },
-    { name: "Water Chillers & Cooling Systems", count: 5 },
-    { name: "Medical Oxygen Plant", count: 1 },
-    { name: "Hydrogen + Zero Air Generator", count: 5 },
-    { name: "Hydrogen Generator", count: 0 },
-    { name: "Nitrogen Generator", count: 17 },
-    { name: "Zero Air Generator", count: 3 },
-    { name: "Accessories", count: 4 },
-    { name: "Green Hydrogen", count: 0 },
+    { name: "All", count: null as number | null },
+    ...CATEGORY_NAMES.map((name) => ({
+        name,
+        count: PRODUCTS.filter((p) => p.category === name).length,
+    })),
 ];
 
-const ALL_PRODUCTS = [
-    { id: 1, slug: "fixed-speed-rotary-screw-compressor", title: "Fixed Speed Rotary Screw Compressor 2 – 7.5 KW", brand: "CompAir", category: "Compressed Air Dryers", img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" },
-    { id: 2, slug: "hyperchill-bioenergy-water-chiller", title: "Hyperchill BioEnergy Water Chiller", brand: "Parker", category: "Water Chillers & Cooling Systems", img: "https://images.unsplash.com/photo-1516996087931-5ae405802f9f?w=500&q=80" },
-    { id: 3, slug: "lubricated-rotary-screw-compressor-30-45", title: "Lubricated Rotary Screw Compressor 30 – 45 KW", brand: "CompAir", category: "Compressed Air Dryers", img: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500&q=80" },
-    { id: 4, slug: "pg-plus-hydrogen-generators", title: "PG Plus Hydrogen Generators", brand: "Parker", category: "Hydrogen Generator", img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500&q=80" },
-    { id: 5, slug: "gh-series-high-pressure-filter", title: "GH Series High Pressure Compressed Air Filter", brand: "CompAir", category: "Filters", img: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=500&q=80" },
-    { id: 6, slug: "lubricated-rotary-screw-compressor-90-132", title: "Lubricated Rotary Screw Compressor 90 – 132 KW", brand: "CompAir", category: "Compressed Air Dryers", img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&q=80" },
-    { id: 7, slug: "nitrogen-psa-generator", title: "Nitrogen PSA Generator N2", brand: "Fabrum", category: "Nitrogen Generator", img: "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=500&q=80" },
-    { id: 8, slug: "liquid-nitrogen-fabrum", title: "Liquid Nitrogen (LN) Fabrum System", brand: "Fabrum", category: "Gas Generator", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" },
-    { id: 9, slug: "compressed-air-drain-electronic", title: "Electronic Zero-Loss Compressed Air Drain", brand: "CompAir", category: "Compressed Air Drains", img: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=500&q=80" },
-    { id: 10, slug: "oxygen-generator-psa", title: "PSA Oxygen Generator – Medical Grade", brand: "Fabrum", category: "Medical Oxygen Plant", img: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500&q=80" },
-    { id: 11, slug: "atlas-copco-air-dryer", title: "Atlas Copco Refrigerant Air Dryer FD Series", brand: "Atlas Copco", category: "Compressed Air Dryers", img: "https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=500&q=80" },
-    { id: 12, slug: "zero-air-generator-za", title: "Zero Air Generator ZA Series", brand: "Parker", category: "Zero Air Generator", img: "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=500&q=80" },
-];
+const ALL_PRODUCTS = PRODUCTS;
 
 const PER_PAGE = 6;
 
@@ -228,13 +225,22 @@ export default function ProductsPage() {
                                     <div key={product.id} className="bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
                                          style={{ border: "1px solid #E5E7EB", boxShadow: "0 2px 12px rgba(0,0,0,0.05)" }}>
                                         <div className="w-full overflow-hidden bg-gray-50" style={{ height: 200 }}>
-                                            <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+                                            {product.img ? (
+                                                <img src={product.img} alt={product.title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+                                            ) : (
+                                                <div className="w-full h-full flex flex-col items-center justify-center gap-1.5 text-gray-300">
+                                                    <ImageOff className="w-6 h-6" />
+                                                    <span className="text-[11px] font-medium text-gray-400">Image coming soon</span>
+                                                </div>
+                                            )}
                                         </div>
                                         <div className="flex items-start justify-between gap-3 px-5 py-4" style={{ borderTop: "1px solid #F3F4F6" }}>
                                             <div className="flex-1 min-w-0">
-                                                <p className="font-semibold text-gray-900 text-sm leading-snug">{product.title}</p>
-                                                <span className="inline-block mt-1.5 text-[11px] font-medium px-2.5 py-0.5 rounded-full"
-                                                      style={{ background: "rgba(0,180,216,0.08)", color: "#00B4D8" }}>{product.brand}</span>
+                                                <p className="font-semibold text-gray-900 text-sm leading-snug" style={{ display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{product.title}</p>
+                                                {product.brand && (
+                                                    <span className="inline-block mt-1.5 text-[11px] font-medium px-2.5 py-0.5 rounded-full"
+                                                          style={{ background: "rgba(0,180,216,0.08)", color: "#00B4D8" }}>{product.brand}</span>
+                                                )}
                                             </div>
                                             <Link href={`/products/${product.slug}`} className="shrink-0 text-xs font-semibold whitespace-nowrap" style={{ color: "#00B4D8" }}>
                                                 Learn More

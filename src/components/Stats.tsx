@@ -5,7 +5,7 @@ export default function Stats() {
     { value: "30+",  label: "Skilled Team Members" },
     { value: "5+",   label: "Countries Served" },
     { value: "70+",  label: "Years Of Experience" },
-    { value: "99+",  label: "System Uptime & Reliability" },
+    { value: "98%",  label: "Customer Satisfaction" },
   ];
 
   return (

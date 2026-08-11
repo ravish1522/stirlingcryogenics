@@ -2,36 +2,49 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+// Content and images sourced from the old site's "Industries We Serve"
+// homepage section (migration/homepage-inventory.json) — expanded from 6 to
+// all 8 verified old-site industries, using the old site's own descriptions.
 const APPS = [
   {
     title: "Bio Storage",
     desc: "Preserving biological samples with reliable, ultra-low temperature cryogenic technology.",
-    img: "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=600&q=80",
+    img: "/images/homepage/industry-bio-storage.webp",
   },
   {
     title: "Food & Beverage",
     desc: "Ensuring freshness and longevity with advanced cryogenic freezing solutions.",
-    img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80",
+    img: "/images/homepage/industry-food-beverage.webp",
   },
   {
     title: "LNG & Bio Gas",
     desc: "Enhancing LNG and biogas production efficiency through cryogenic processing.",
-    img: "https://images.unsplash.com/photo-1518818419601-72c8673f5852?w=600&q=80",
+    img: "/images/homepage/industry-lng-bio-gas.webp",
   },
   {
-    title: "Maritime",
-    desc: "Providing maritime cryogenic solutions for specialised industrial operations.",
-    img: "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?w=600&q=80",
+    title: "Maritime & University",
+    desc: "Providing maritime and academic sectors with specialized cryogenic applications.",
+    img: "/images/homepage/industry-maritime-university.webp",
   },
   {
     title: "Healthcare",
-    desc: "Supporting medical advancements with cryogenic solutions for drug preservation.",
-    img: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&q=80",
+    desc: "Supporting medical advancements with cryogenic solutions for drug preservation and research.",
+    img: "/images/homepage/industry-healthcare.webp",
   },
   {
-    title: "Research & Universities",
-    desc: "Advancing scientific research with precise cryogenic applications.",
-    img: "https://images.unsplash.com/photo-1532094349884-543559c97852?w=600&q=80",
+    title: "Research",
+    desc: "Facilitating breakthroughs in various fields with precise cryogenic temperature control.",
+    img: "/images/homepage/industry-research.webp",
+  },
+  {
+    title: "Space Observatory",
+    desc: "Equipping space observatories with cryocoolers for sensitive astronomical instruments.",
+    img: "/images/homepage/industry-space-observatory.webp",
+  },
+  {
+    title: "Nuclear",
+    desc: "Supporting nuclear research and operations with critical cryogenic cooling technology.",
+    img: "/images/homepage/industry-nuclear.webp",
   },
 ];
 

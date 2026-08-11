@@ -1,0 +1,180 @@
+{
+  "source_old_site": "https://stirlingcryogenics.co.in/",
+  "source_new_site": "https://stirlingcryogenics.netlify.app/",
+  "new_homepage_existing_sections": [
+    { "component": "Hero.tsx", "description": "Full-bleed image slideshow (4 Unsplash stock slides) with rotating headline, subheadline, 'Get a Quote' + 'Watch Demo' CTA buttons, dot indicators." },
+    { "component": "Stats.tsx", "description": "'Our Impact in Numbers' — 6 stat tiles: 700+ Installations, 650+ Happy Clients, 30+ Team Members, 5+ Countries Served, 70+ Years Experience, 99+ System Uptime & Reliability." },
+    { "component": "Applications.tsx", "description": "'Applications of Our Cryogenic Solutions' — carousel of 6 industry cards: Bio Storage, Food & Beverage, LNG & Bio Gas, Maritime, Healthcare, Research & Universities." },
+    { "component": "WhyChoose.tsx", "description": "'Why Choose Stirling Cryogenics' — honeycomb of 6 USP cards: Eco-Friendly & Sustainable, Industry-Leading Expertise, Customised Solution, Eco-Friendly & Sustainable (duplicate), Strategic Partnerships, Proven Expertise." },
+    { "component": "Testimonials.tsx", "description": "'What Our Clients Say' — 2 testimonial cards (initials-avatar placeholders): Dr. Anjali Mehta, Chef Arjun Singh." },
+    { "component": "Contact.tsx", "description": "'Let's Discuss Your Project' — contact info block + quote request form." },
+    { "component": "Footer.tsx (site-wide, not homepage-specific)", "description": "Applications links, Quick Links, Products links, newsletter signup — already present, out of scope for this homepage content migration." }
+  ],
+  "sections": [
+    {
+      "old_section": "Hero / Image Slider",
+      "old_heading": null,
+      "old_content": "Nextend Smart Slider with 5 background-image slides (no headline/subheadline/CTA text captured in server-rendered HTML — slide captions, if any, are rendered client-side by the slider plugin and were not recoverable via static fetch). Slide images are product/branding photography, not stock imagery.",
+      "old_images": [
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/Untitled-design-1.png", "alt": "", "purpose": "hero slide 1 (branding graphic)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/1-scaled.png", "alt": "", "purpose": "hero slide 2" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/slider/cache/fb958db78dfac7f9f3bd04d747b25d90/liquid-nitrogen-plant.png", "alt": "liquid nitrogen plant", "purpose": "hero slide 3 - liquid nitrogen plant photo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/slider/cache/a45a079bff5118a34f4b8994ca05851a/liquid-oxygen-plant.jpg", "alt": "liquid oxygen plant", "purpose": "hero slide 4 - liquid oxygen plant photo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/slider/cache/422bfbbda53f51906226a4c0554483ca/hydrogen-plant.png", "alt": "hydrogen plant", "purpose": "hero slide 5 - hydrogen plant photo" }
+      ],
+      "old_links": [
+        { "text": "Get A Quote (nav)", "href": "opens an Elementor popup modal (id 3343) — modal contents not extracted, out of scope for static homepage inventory" }
+      ],
+      "relevant_stats": [],
+      "suggested_new_section_match": "Hero.tsx",
+      "notes": "New site's Hero uses generic Unsplash stock photography and invented marketing copy ('Advanced Cryogenic solutions for Industry', etc.) with no old-site source. Old site's actual hero slides are real product/plant photography (liquid nitrogen/oxygen/hydrogen plants) with no extractable text overlay. These real plant photos are a legitimate, higher-value asset to consider using in place of stock photos, but no old-site headline/subheadline text exists to migrate verbatim — any hero copy decision should be made explicitly, not inferred from old site content since none was found."
+    },
+    {
+      "old_section": "Company Introduction (\"WELCOME to Stirling Cryogenics\")",
+      "old_heading": "WELCOME to Stirling Cryogenics India Pvt Ltd",
+      "old_content": "Pioneering excellence in cryogenic technology for over 70 years. We design and deliver world-class cryogenic systems that power innovation, sustainability, and performance across industries worldwide.",
+      "old_images": [
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/04/PTC1000-768x828.png", "alt": "", "purpose": "featured product photo (PTC1000 cryocooler) accompanying the company intro text" }
+      ],
+      "old_links": [],
+      "relevant_stats": [],
+      "suggested_new_section_match": "NO_EXISTING_SECTION",
+      "notes": "No dedicated 'About/Company Introduction' section exists on the new homepage. This exact tagline text ('Pioneering excellence...for over 70 years...') already appears verbatim as the About Us page's overview_description (captured in migration/homepage.json from the earlier products-inventory pass), so the content itself is not lost from the site, just absent from the new HOMEPAGE specifically."
+    },
+    {
+      "old_section": "Achievement Statistics (\"Power Progress\")",
+      "old_heading": "Power Progress - Our Achievement in Numbers",
+      "old_content": "With 700+ Installations, 30+ Team Members And 650+ Satisfied Clients Across 5+ Countries, Advance Technology is Shaping a sustainable future with over 70 years of experience and a 98% customer satisfaction rate.",
+      "old_images": [],
+      "old_links": [],
+      "relevant_stats": [
+        { "value": "700+", "label": "Installations completed" },
+        { "value": "650+", "label": "Happy Clients" },
+        { "value": "30+", "label": "Skilled Team Members" },
+        { "value": "5+", "label": "Country Served" },
+        { "value": "70+", "label": "Years Of Experience" },
+        { "value": "98%", "label": "Customer satisfaction rate (mentioned in intro paragraph only, not a separate stat tile on old site)" }
+      ],
+      "suggested_new_section_match": "Stats.tsx",
+      "notes": "CONTENT CONFLICT: new site's Stats.tsx shows 6 tiles including '99+ System Uptime & Reliability', which does NOT appear anywhere on the old homepage. Old site instead mentions a distinct '98% customer satisfaction rate' figure (in prose, not as its own tile) that the new site is missing entirely. The other 5 stats (700+/650+/30+/5+/70+) match exactly between old and new. This is the clearest existing-section match in the whole homepage."
+    },
+    {
+      "old_section": "Why Choose Stirling Cryogenics (USP set A)",
+      "old_heading": "Why Choose Stirling Cryogenics — Powering Innovation, Leading the Industry",
+      "old_content": "At Stirling Cryogenics, we don't just provide technology — we deliver solutions that set new standards. Our advanced systems ensure unmatched efficiency, precision, and reliability for all industrial and research applications.",
+      "old_images": [],
+      "old_links": [],
+      "relevant_stats": [],
+      "suggested_new_section_match": "WhyChoose.tsx",
+      "notes": "Old site's 6 honeycomb items: 'Proven Expertise' (70 years cryogenic engineering excellence...), 'Eco-Friendly & Sustainable' (energy-efficient systems...), 'Advanced Liquid Nitrogen Systems' (PSA-based generators ensure precision, efficiency, and reliable operation), 'Customized Solutions' (tailored cryogenic systems...), 'Strategic Partnerships' (collaboration with Fabrum...), 'Industry-Leading Expertise' (delivering high-performance solutions...). New site's WhyChoose.tsx has the SAME 6-cell honeycomb layout but one cell is a duplicate of 'Eco-Friendly & Sustainable' instead of 'Advanced Liquid Nitrogen Systems' — meaning the new site is currently missing this one old-site USP item and has an accidental repeat instead. All other 5 items match near-verbatim between old and new."
+    },
+    {
+      "old_section": "How Stirling Cryogenics Are Different (USP set B)",
+      "old_heading": "How Stirling Cryogenics Are Different. We Deliver Excellence",
+      "old_content": "A second, separate 4-item differentiator block below USP set A.",
+      "old_images": [],
+      "old_links": [],
+      "relevant_stats": [],
+      "suggested_new_section_match": "NO_EXISTING_SECTION",
+      "notes": "4 items, each with an emoji icon: '⚙️ Custom Solutions' (Every project is unique...we design and deliver customized cryogenic plants...), '🤝 Reliable Support' (From concept to commissioning and beyond...), '❄️ Innovative Technology' (Experience next-generation cryogenic systems...we integrate cutting-edge cooling technology...), '🌱 Sustainable Practices' (Driven by sustainability...minimize environmental impact while optimizing energy consumption). This entire second USP block has no counterpart on the new homepage at all — WhyChoose.tsx only reproduces USP set A above, not this one. Content overlaps conceptually with set A (both mention custom/sustainable/tech) but uses different wording and framing, so it is not simply a duplicate to discard."
+    },
+    {
+      "old_section": "Client / Partner Trust Logos",
+      "old_heading": "Trusted by Global Innovators. Proven Across Continents.",
+      "old_content": "A horizontal strip of ~21 client/partner/institution logos.",
+      "old_images": [
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/download-1.jpeg", "alt": "", "purpose": "client logo (unlabeled filename)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/hitachi.jpeg", "alt": "hitachi", "purpose": "client logo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/haier.jpeg", "alt": "haier", "purpose": "client logo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/dalmia.jpeg", "alt": "dalmia", "purpose": "client logo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/j-k-lakshmi.png", "alt": "j k lakshmi", "purpose": "client logo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/iise-shivpur.png", "alt": "iise shivpur", "purpose": "client/institution logo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/nuclear-power.jpeg", "alt": "nuclear power", "purpose": "client logo (Nuclear Power Corporation)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/madras-veternary.jpeg", "alt": "madras veternary", "purpose": "institution logo (Madras Veterinary College)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/havells.png", "alt": "havells", "purpose": "client logo" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/iiser-behrampur.jpeg", "alt": "iiser behrampur", "purpose": "institution logo (IISER Berhampur)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/nasa.png", "alt": "nasa", "purpose": "client/partner logo (NASA)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/l-t.jpeg", "alt": "l&t", "purpose": "client logo (L&T)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/nit.png", "alt": "nit", "purpose": "institution logo (NIT)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/cnci.jpeg", "alt": "cnci", "purpose": "client logo (CNCI)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/makino.jpeg", "alt": "makino", "purpose": "client logo (Makino)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/bhel-logo.png", "alt": "bhel logo", "purpose": "client logo (BHEL)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/jindal.png", "alt": "jindal", "purpose": "client logo (Jindal)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/jnu.jpeg", "alt": "jnu", "purpose": "institution logo (JNU)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/drdo.png", "alt": "drdo", "purpose": "client logo (DRDO)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/iisc.jpg", "alt": "iisc", "purpose": "institution logo (IISc)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/uflex.jpeg", "alt": "uflex", "purpose": "client logo (Uflex)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/acc.jpeg", "alt": "acc", "purpose": "client logo (ACC)" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/rajmata-vijayaje.jpeg", "alt": "rajmata vijayaje", "purpose": "institution logo (Rajmata Vijayaraje)" }
+      ],
+      "old_links": [],
+      "relevant_stats": [],
+      "suggested_new_section_match": "NO_EXISTING_SECTION",
+      "notes": "Significant trust/credibility content entirely absent from the new homepage — no logo strip, client list, or 'Trusted by' section exists anywhere in the current new-site components. All 22 logo images are live and accessible (verified 200 OK). This is one of the most valuable pieces of old-site content with no home on the new site yet."
+    },
+    {
+      "old_section": "Industries We Serve",
+      "old_heading": "Industries We Serve",
+      "old_content": "Section intro not present as a separate paragraph beyond the heading; 8 industry cards follow directly.",
+      "old_images": [
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Bio-Storage-1024x576.png", "alt": "", "purpose": "Bio Storage card image" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Food-Beverage-1024x576.png", "alt": "", "purpose": "Food & Beverage card image" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/LNG-Bio-Gas-1024x576.png", "alt": "", "purpose": "LNG & Bio Gas card image" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Maritime-University-1024x576.png", "alt": "", "purpose": "Maritime & University card image" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Healthcare-1024x576.png", "alt": "", "purpose": "Healthcare card image" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Research-1024x576.png", "alt": "", "purpose": "Research card image" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Space-Observatory-1024x576.png", "alt": "", "purpose": "Space Observatory card image" },
+        { "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Nuclear-1024x576.png", "alt": "", "purpose": "Nuclear card image" }
+      ],
+      "old_links": [],
+      "relevant_stats": [],
+      "suggested_new_section_match": "Applications.tsx",
+      "notes": "Old site has 8 industries: Bio Storage, Food & Beverage, LNG & Bio Gas, 'Maritime & University' (combined), Healthcare, Research, Space Observatory, Nuclear. New site's Applications.tsx has only 6: Bio Storage, Food & Beverage, LNG & Bio Gas, Maritime (split out), Healthcare, 'Research & Universities' (the 'University' half of old's combined card, merged with Research instead). Net effect: 'Space Observatory' and 'Nuclear' industries exist on the old site with real descriptions and images but have no equivalent card on the new site at all. Also note: new site's Applications.tsx uses generic Unsplash stock photos for all 6 cards, not these real old-site industry images."
+    },
+    {
+      "old_section": "Testimonials (\"What Motivates Us\")",
+      "old_heading": "What Motivates us",
+      "old_content": "Section intro not present beyond heading; 2 testimonial cards follow.",
+      "old_images": [
+        { "url": "http://stirlingcryogenics.co.in/wp-content/uploads/2024/01/1-3.png", "alt": "1", "purpose": "real headshot photo for testimonial 1 (Dr. Anjali Mehta)" },
+        { "url": "http://stirlingcryogenics.co.in/wp-content/uploads/2024/01/2-3.png", "alt": "2", "purpose": "real headshot photo for testimonial 2 (Chef Arjun Singh)" }
+      ],
+      "old_links": [],
+      "relevant_stats": [],
+      "suggested_new_section_match": "Testimonials.tsx",
+      "notes": "Clean 1:1 match — same two people (Dr. Anjali Mehta, Biomedical Research Director; Chef Arjun Singh, Food & Beverage Industry Expert) and near-identical quote text already exist on the new site's Testimonials.tsx. The one gap: old site has real headshot photos for both people (verified accessible), while the new site currently shows colored-initial placeholder avatars ('AM', 'AS') instead of using these real photos."
+    },
+    {
+      "old_section": "Our Products in Action",
+      "old_heading": "Our Products in Action",
+      "old_content": "Section intro not present beyond heading; 5 icon-based application cards follow, each with a 'Learn More' link, plus a 'See More' link at the end.",
+      "old_images": [],
+      "old_links": [
+        { "text": "Learn More (Research and Laboratories)", "href": "https://stirlingcryogenics.zuchry.com/index.php/applications/" },
+        { "text": "Learn More (Medical Field)", "href": "https://stirlingcryogenics.zuchry.com/index.php/applications/" },
+        { "text": "Learn More (Space Applications)", "href": "https://stirlingcryogenics.zuchry.com/index.php/applications/" },
+        { "text": "Learn More (Superconductivity Studies)", "href": "https://stirlingcryogenics.zuchry.com/index.php/applications/" },
+        { "text": "Learn More (Industrial Cooling)", "href": "https://stirlingcryogenics.zuchry.com/index.php/applications/" },
+        { "text": "See More", "href": "https://stirlingcryogenics.zuchry.com/index.php/applications/" }
+      ],
+      "relevant_stats": [],
+      "suggested_new_section_match": "NO_EXISTING_SECTION",
+      "notes": "5 items: 'Research and Laboratories' (cooling detectors, sensors, instruments), 'Medical Field' (MRI superconducting magnets, cryopreservation), 'Space Applications' (infrared sensors, telescopes), 'Superconductivity Studies', 'Industrial Cooling'. Icon-based cards, no images. This is conceptually distinct from 'Industries We Serve' — it describes cryogenic PRODUCT use-cases rather than customer industries — and has no equivalent section anywhere on the new homepage. IMPORTANT: all 6 of this section's links (including 'See More') point to the dead staging domain stirlingcryogenics.zuchry.com, which is broken/inaccessible — this content's links should NOT be carried over as-is if this section is ever built."
+    },
+    {
+      "old_section": "Contact / Get In Touch",
+      "old_heading": "Get In Touch With Us",
+      "old_content": "Followed by a secondary CTA heading 'Get an Engineered Solution Quote' and two 'Request Your Quote' form instances in the footer area.",
+      "old_images": [],
+      "old_links": [],
+      "relevant_stats": [],
+      "suggested_new_section_match": "Contact.tsx",
+      "notes": "Direct match — new site's Contact.tsx ('Let's Discuss Your Project') already covers this. Old site additionally has a nav-level 'Get A Quote' button that opens a popup modal (contents not extracted here, out of scope for a static homepage fetch) — worth checking separately if that popup contains anything not already in the new Contact form."
+    }
+  ],
+  "certifications_found": "None. No ISO, accreditation, or certification badges/content were found anywhere on the old homepage.",
+  "videos_animations_found": {
+    "legitimate": "None. No legitimate embedded video, animation, or media content was found on the old homepage.",
+    "security_concern": "CRITICAL — a hidden <video> element (1x1px, autoplay, muted) was found in the old homepage HTML, loading a file from a suspicious third-party domain ('videocdnnetworkalls.monster') with a filename indicating adult content. This is a strong indicator that the old WordPress site is currently compromised/infected with malware (a common hidden-video-injection pattern). This is NOT legitimate site content and must not be migrated. Recommend flagging this to the client immediately and independently of this migration project so they can have the old site professionally cleaned/secured — this is a security incident, not a content item."
+  }
+}

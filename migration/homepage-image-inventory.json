@@ -1,0 +1,395 @@
+{
+  "source": "https://stirlingcryogenics.co.in/ (homepage)",
+  "total_images_found": 43,
+  "usable_accessible_images": 43,
+  "inaccessible_images": 0,
+  "images": [
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2023/10/logo-dark.png",
+      "alt_text": "logo-dark",
+      "belongs_to_section": "Header/Footer (site-wide)",
+      "purpose": "site logo, already migrated",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": false
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/Untitled-design-1.png",
+      "alt_text": "",
+      "belongs_to_section": "Hero / Image Slider",
+      "purpose": "hero slide background",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/1-scaled.png",
+      "alt_text": "",
+      "belongs_to_section": "Hero / Image Slider",
+      "purpose": "hero slide background",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/slider/cache/fb958db78dfac7f9f3bd04d747b25d90/liquid-nitrogen-plant.png",
+      "alt_text": "",
+      "belongs_to_section": "Hero / Image Slider",
+      "purpose": "hero slide background - liquid nitrogen plant",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/slider/cache/a45a079bff5118a34f4b8994ca05851a/liquid-oxygen-plant.jpg",
+      "alt_text": "",
+      "belongs_to_section": "Hero / Image Slider",
+      "purpose": "hero slide background - liquid oxygen plant",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/slider/cache/422bfbbda53f51906226a4c0554483ca/hydrogen-plant.png",
+      "alt_text": "",
+      "belongs_to_section": "Hero / Image Slider",
+      "purpose": "hero slide background - hydrogen plant",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2023/12/Screw_compressors-1-300x240.webp",
+      "alt_text": "",
+      "belongs_to_section": "Site meta (og:image)",
+      "purpose": "default social-share preview image, not an inline homepage content image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": false
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/04/PTC1000-768x828.png",
+      "alt_text": "",
+      "belongs_to_section": "Company Introduction",
+      "purpose": "featured product photo next to the 'WELCOME' company intro text",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/download-1.jpeg",
+      "alt_text": "",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo (unlabeled filename)",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/hitachi.jpeg",
+      "alt_text": "hitachi",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/haier.jpeg",
+      "alt_text": "haier",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/dalmia.jpeg",
+      "alt_text": "dalmia",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/j-k-lakshmi.png",
+      "alt_text": "j k lakshmi",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/iise-shivpur.png",
+      "alt_text": "iise shivpur",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "institution logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/nuclear-power.jpeg",
+      "alt_text": "nuclear power",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/madras-veternary.jpeg",
+      "alt_text": "madras veternary",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "institution logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/havells.png",
+      "alt_text": "havells",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/iiser-behrampur.jpeg",
+      "alt_text": "iiser behrampur",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "institution logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/nasa.png",
+      "alt_text": "nasa",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client/partner logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/l-t.jpeg",
+      "alt_text": "l& t",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/nit.png",
+      "alt_text": "nit",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "institution logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/cnci.jpeg",
+      "alt_text": "cnci",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/makino.jpeg",
+      "alt_text": "makino",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/bhel-logo.png",
+      "alt_text": "bhel logo",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/jindal.png",
+      "alt_text": "jindal",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/jnu.jpeg",
+      "alt_text": "jnu",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "institution logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/drdo.png",
+      "alt_text": "drdo",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/iisc.jpg",
+      "alt_text": "iisc",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "institution logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/uflex.jpeg",
+      "alt_text": "uflex",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/acc.jpeg",
+      "alt_text": "acc",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "client logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/rajmata-vijayaje.jpeg",
+      "alt_text": "rajmata vijayaje",
+      "belongs_to_section": "Client / Partner Trust Logos",
+      "purpose": "institution logo",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Bio-Storage-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "Bio Storage card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Food-Beverage-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "Food & Beverage card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/LNG-Bio-Gas-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "LNG & Bio Gas card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Maritime-University-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "Maritime & University card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Healthcare-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "Healthcare card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Research-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "Research card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Space-Observatory-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "Space Observatory card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2024/01/Nuclear-1024x576.png",
+      "alt_text": "",
+      "belongs_to_section": "Industries We Serve",
+      "purpose": "Nuclear card image",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "http://stirlingcryogenics.co.in/wp-content/uploads/2024/01/1-3.png",
+      "alt_text": "1",
+      "belongs_to_section": "Testimonials",
+      "purpose": "real headshot - Dr. Anjali Mehta",
+      "http_status": "301",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "http://stirlingcryogenics.co.in/wp-content/uploads/2024/01/2-3.png",
+      "alt_text": "2",
+      "belongs_to_section": "Testimonials",
+      "purpose": "real headshot - Chef Arjun Singh",
+      "http_status": "301",
+      "accessible": true,
+      "recommended_to_download_locally": true
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2025/10/call-at-stirling-cryogenics.webp",
+      "alt_text": "",
+      "belongs_to_section": "Header/Nav (site-wide)",
+      "purpose": "call-to-action icon/graphic, not homepage body content",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": false
+    },
+    {
+      "url": "https://stirlingcryogenics.co.in/wp-content/uploads/2023/10/logo.webp",
+      "alt_text": "",
+      "belongs_to_section": "Header/Footer (site-wide)",
+      "purpose": "site logo variant, already migrated",
+      "http_status": "200",
+      "accessible": true,
+      "recommended_to_download_locally": false
+    }
+  ]
+}

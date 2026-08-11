@@ -1,16 +1,12 @@
 const TESTIMONIALS = [
   {
-    initials: "AM",
-    bg: "bg-blue-100",
-    color: "text-blue-700",
+    photo: "/images/homepage/testimonial-dr-anjali-mehta.webp",
     name: "Dr.Anjali mehta",
     role: "Biomedical Research Director",
     text: "Stirling cryogenics' liquid nitrogen system have revolutionized our biostorage processes: the reliability and precision of their technology have been instrumental in our critical research projects.",
   },
   {
-    initials: "AS",
-    bg: "bg-orange-100",
-    color: "text-orange-700",
+    photo: "/images/homepage/testimonial-chef-arjun-singh.webp",
     name: "Chef Arjun Singh",
     role: "Food & Beverage Industry expert",
     text: "The cryogenics solutions from stirling have transformed how we handle food preservation. their technology ensures freshness and quality, significantly enhancing our operational efficiency.",
@@ -51,11 +47,11 @@ export default function Testimonials() {
                 {t.text}
               </p>
               <div className="flex items-center gap-3">
-                <div
-                  className={`w-10 h-10 rounded-full ${t.bg} flex items-center justify-center font-bold text-sm ${t.color} shrink-0`}
-                >
-                  {t.initials}
-                </div>
+                <img
+                  src={t.photo}
+                  alt={t.name}
+                  className="w-10 h-10 rounded-full object-cover shrink-0"
+                />
                 <div>
                   <p className="font-semibold text-gray-900 text-[13px]">{t.name}</p>
                   <p className="text-[11px] text-gray-500">{t.role}</p>

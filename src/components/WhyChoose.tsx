@@ -1,4 +1,4 @@
-import { Leaf, Briefcase, Settings, Users, Award } from "lucide-react";
+import { Leaf, Briefcase, Settings, Users, Award, Snowflake } from "lucide-react";
 
 function HexCard({ icon: Icon, title, desc }: { icon: React.ElementType; title: string; desc: string }) {
   return (
@@ -45,7 +45,7 @@ export default function WhyChoose() {
               <HexCard icon={Settings} title="Customised Solution" desc="Tailored cryogenic systems to meet your unique operational needs." />
             </div>
             <div className="absolute" style={{ width: 240, height: 260, right: "0%", top: "260px" }}>
-              <HexCard icon={Leaf} title="Eco-Friendly & Sustainable" desc="Energy-efficient systems designed to minimize environmental impact." />
+              <HexCard icon={Snowflake} title="Advanced Liquid Nitrogen Systems" desc="PSA-based generators ensure precision, efficiency, and reliable operation." />
             </div>
             <div className="absolute" style={{ width: 240, height: 260, left: "0%", top: "260px" }}>
               <HexCard icon={Users} title="Strategic Partnerships" desc="Collaboration with Fabrum combines innovation with deep market knowledge." />
@@ -61,7 +61,7 @@ export default function WhyChoose() {
               { icon: Leaf, title: "Eco-Friendly & Sustainable", desc: "Energy-efficient systems designed to minimize environmental impact." },
               { icon: Briefcase, title: "Industry-Leading Expertise", desc: "Delivering high-performance cryogenic solutions trusted by industries worldwide." },
               { icon: Settings, title: "Customised <br> Solution", desc: "Tailored cryogenic systems to meet your unique operational needs." },
-              { icon: Leaf, title: "Eco-Friendly & Sustainable", desc: "Energy-efficient systems designed to minimize environmental impact." },
+              { icon: Snowflake, title: "Advanced Liquid Nitrogen Systems", desc: "PSA-based generators ensure precision, efficiency, and reliable operation." },
               { icon: Users, title: "Strategic Partnerships", desc: "Collaboration with Fabrum combines innovation with deep market knowledge." },
               { icon: Award, title: "Proven Expertise", desc: "With 70 years of cryogenic engineering excellence, we deliver trusted solutions." },
             ].map((c, i) => (

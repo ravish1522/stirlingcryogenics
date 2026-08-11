@@ -1,0 +1,1589 @@
+{
+  "generated_from": "migration/product-mapping.json",
+  "existing_new_site_categories": [
+    "Compressed Air Drains",
+    "Compressed Air Dryers",
+    "Filters",
+    "Gas Generator",
+    "Service Kits",
+    "Water Chillers & Cooling Systems",
+    "Medical Oxygen Plant",
+    "Hydrogen + Zero Air Generator",
+    "Hydrogen Generator",
+    "Nitrogen Generator",
+    "Zero Air Generator",
+    "Accessories",
+    "Green Hydrogen"
+  ],
+  "instructions_followed": [
+    "No new category pages were created or proposed.",
+    "No product was forced into an unrelated existing category — partial/ambiguous overlaps go to MANUAL_REVIEW, not auto-matched.",
+    "Original old-site category strings preserved verbatim per product (old_category_raw).",
+    "All 133 products retained in this file regardless of status."
+  ],
+  "status_legend": {
+    "READY_TO_MIGRATE": "Product's old-site category leaf matches an existing new-site category exactly (allowing for singular/plural and parenthetical-qualifier normalization only).",
+    "CATEGORY_NOT_BUILT": "Product's old-site category does not correspond to, or meaningfully overlap with, any of the 13 categories currently built on the new website. No new page will be created for it.",
+    "MANUAL_REVIEW": "Category information was missing/unusable, or partially overlaps an existing category without being an exact match — requires a human decision."
+  },
+  "summary_counts": {
+    "READY_TO_MIGRATE": 84,
+    "CATEGORY_NOT_BUILT": 22,
+    "MANUAL_REVIEW": 27
+  },
+  "ready_to_migrate_by_new_site_category": {
+    "Nitrogen Generator": 16,
+    "Hydrogen + Zero Air Generator": 2,
+    "Accessories": 1,
+    "Water Chillers & Cooling Systems": 7,
+    "Compressed Air Dryers": 12,
+    "Compressed Air Drains": 5,
+    "Filters": 8,
+    "Service Kits": 5,
+    "Gas Generator": 26,
+    "Medical Oxygen Plant": 2
+  },
+  "category_not_built_breakdown": {
+    "Maintenance & Service": 1,
+    "Dryer Maintenance": 1,
+    "Industrial Cooling Systems": 1,
+    "MS Equipment": 1,
+    "Cryogenic Systems": 1,
+    "Air Compression Systems": 15,
+    "Liquid Oxygen (LOX)": 1,
+    "Liquid Nitrogen (LIN)": 1
+  },
+  "manual_review_breakdown": {
+    "Industrial Segment - PSA Nitrogen Gas Generator": 2,
+    "Compressed Air Filters": 1,
+    "Filtration / High-Pressure Filters": 1,
+    "Water Chillers - Kits & Accessories": 1,
+    "Maintenance & Service Kits": 2,
+    "Not provided in content": 3,
+    "Not specified in provided content": 1,
+    "(no category)": 6,
+    "Industrial Segment > Hydrogen": 9,
+    "Industrial Segment > PSA Nitrogen Gas Generator": 1
+  },
+  "total_products": 133,
+  "products": [
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mini-whisper-nitrogen-generator/",
+      "product_name": "Mini Whisper Nitrogen Generator",
+      "new_slug": "mini-whisper-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mini-whisper-hybrid-nitrogen-generator/",
+      "product_name": "Mini Whisper Hybrid Nitrogen Generator",
+      "new_slug": "mini-whisper-hybrid-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-40-nitrogen-generator/",
+      "product_name": "Whisper 0-40 Nitrogen Generator",
+      "new_slug": "whisper-0-40-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-80-nitrogen-generator/",
+      "product_name": "Whisper 0-80 Nitrogen Generator",
+      "new_slug": "whisper-0-80-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-120-nitrogen-generator/",
+      "product_name": "Whisper 0-120 Nitrogen Generator",
+      "new_slug": "whisper-0-120-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-10-hybrid-nitrogen-generator/",
+      "product_name": "Whisper 0-10 Hybrid Nitrogen Generator",
+      "new_slug": "whisper-0-10-hybrid-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-40-hybrid-nitrogen-generator/",
+      "product_name": "Whisper 0-40 Hybrid Nitrogen Generator",
+      "new_slug": "whisper-0-40-hybrid-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-40-hybrid-p-e-single-nitrogen-generator/",
+      "product_name": "Whisper 0-40 Hybrid P-E Single Nitrogen Generator",
+      "new_slug": "whisper-0-40-hybrid-p-e-single-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-80-hybrid-nitrogen-generator/",
+      "product_name": "Whisper 0-80 Hybrid Nitrogen Generator",
+      "new_slug": "whisper-0-80-hybrid-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-120-hybrid-nitrogen-generator/",
+      "product_name": "Whisper 0-120 Hybrid Nitrogen Generator",
+      "new_slug": "whisper-0-120-hybrid-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mistral-evolution-10-nitrogen-generator/",
+      "product_name": "Mistral Evolution 10 Nitrogen Generator",
+      "new_slug": "mistral-evolution-10-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mistral-evolution-hybrid-nitrogen-generator/",
+      "product_name": "Mistral Evolution Hybrid Nitrogen Generator",
+      "new_slug": "mistral-evolution-hybrid-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mistral-evolution-gas-station-nitrogen-generator/",
+      "product_name": "Mistral Evolution Gas Station Nitrogen Generator",
+      "new_slug": "mistral-evolution-gas-station-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mistral-evolution-gas-station-p-e-nitrogen-generator/",
+      "product_name": "Mistral Evolution Gas Station P-E Nitrogen Generator",
+      "new_slug": "mistral-evolution-gas-station-p-e-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hp-plus-500-tower-nitrogen-generator/",
+      "product_name": "HP Plus 500 Tower Nitrogen Generator",
+      "new_slug": "hp-plus-500-tower-nitrogen-generator",
+      "old_category_raw": "Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nm-plus-100-rack-hydrogen-zero-air-generator/",
+      "product_name": "NM Plus 100 Rack Hydrogen + Zero Air Generator",
+      "new_slug": "nm-plus-100-rack-hydrogen-zero-air-generator",
+      "old_category_raw": "Industrial Segment - Hydrogen + Zero Air Generators (VICI DBS AG)",
+      "matched_new_site_category": "Hydrogen + Zero Air Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Hydrogen + Zero Air Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/custom-accessories/",
+      "product_name": "Custom Accessories",
+      "new_slug": "custom-accessories",
+      "old_category_raw": "VICI DBS AG - Accessories",
+      "matched_new_site_category": "Accessories",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Accessories'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pcb-1500w-peltier-cryobath/",
+      "product_name": "PCB 1500W Peltier Cryobath",
+      "new_slug": "pcb-1500w-peltier-cryobath",
+      "old_category_raw": "Industrial Segment - Water Chillers & Cooling Systems",
+      "matched_new_site_category": "Water Chillers & Cooling Systems",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Water Chillers & Cooling Systems'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pcb-1500-plus-peltier-cryobath/",
+      "product_name": "PCB 1500 Plus Peltier Cryobath",
+      "new_slug": "pcb-1500-plus-peltier-cryobath",
+      "old_category_raw": "Industrial Segment - Water Chillers & Cooling Systems",
+      "matched_new_site_category": "Water Chillers & Cooling Systems",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Water Chillers & Cooling Systems'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pcb-1500-high-performance-peltier-cryobath/",
+      "product_name": "PCB 1500 High Performance Peltier Cryobath",
+      "new_slug": "pcb-1500-high-performance-peltier-cryobath",
+      "old_category_raw": "Industrial Segment - Water Chillers & Cooling Systems",
+      "matched_new_site_category": "Water Chillers & Cooling Systems",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Water Chillers & Cooling Systems'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hp-plus-200-tower-nitrogen-hc-removal-generator/",
+      "product_name": "HP Plus 200 Tower Nitrogen + HC Removal Generator",
+      "new_slug": "hp-plus-200-tower-nitrogen-hc-removal-generator",
+      "old_category_raw": "Industrial Segment - PSA Nitrogen Gas Generator",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Gas Generator",
+        "Nitrogen Generator"
+      ],
+      "content_classification": "B",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment - PSA Nitrogen Gas Generator' partially overlaps existing new-site categories ['Gas Generator', 'Nitrogen Generator'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/whisper-0-40-hybrid-p-e-dual-nitrogen-generator/",
+      "product_name": "Whisper 0-40 Hybrid P-E Dual Nitrogen Generator",
+      "new_slug": "whisper-0-40-hybrid-p-e-dual-nitrogen-generator",
+      "old_category_raw": "Industrial Segment - PSA Nitrogen Gas Generator",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Gas Generator",
+        "Nitrogen Generator"
+      ],
+      "content_classification": "C",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment - PSA Nitrogen Gas Generator' partially overlaps existing new-site categories ['Gas Generator', 'Nitrogen Generator'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/antares-series-low-energy-tandem-technology-compressed-air-dryer/",
+      "product_name": "Antares Series Compressed Air Dryer with Tandem Technology",
+      "new_slug": "antares-series-compressed-air-dryer-with-tandem-technology",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/starletteplus-e-sps-series-compressed-air-refrigeration-dryers-60hz-ul-listed-for-north-america/",
+      "product_name": "StarlettePlus-E (SPS) Series Compressed Air Refrigeration Dryers",
+      "new_slug": "starletteplus-e-sps-series-compressed-air-refrigeration-dryers",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/wvm-series-large-flow-low-energy-vacuum-regenerated-compressed-air-dryer/",
+      "product_name": "Parker Generation 5 WVM Compressed Air Dryer",
+      "new_slug": "parker-generation-5-wvm-compressed-air-dryer",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mxle-large-flow-low-energy-heatless-compressed-air-dryer/",
+      "product_name": "MXLE Dryer",
+      "new_slug": "mxle-dryer",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mx-large-flow-heatless-compressed-air-dryer/",
+      "product_name": "MX Large Flow Heatless Compressed Air Dryer",
+      "new_slug": "mx-large-flow-heatless-compressed-air-dryer",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ofas-hl-medium-flow-oil-free-heatless-compressed-air-dryer-system/",
+      "product_name": "OFAS HL Oil Free Air System",
+      "new_slug": "ofas-hl-oil-free-air-system",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/k-mt-10-95-series-heatless-compressed-air-dryers/",
+      "product_name": "K-MT 10-95 Series",
+      "new_slug": "k-mt-10-95-series",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ke-mt-series-large-flow-heatless-compressed-air-dryer/",
+      "product_name": "Parker Zander KE-MT Series / KEA-MT Series Heatless Adsorption Dryers",
+      "new_slug": "parker-zander-ke-mt-series-kea-mt-series-heatless-adsorption-dryers",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ka-mt-10-95-series-compressed-air-adsorption-dryers-with-activated-carbon-stage/",
+      "product_name": "KA-MT 10-95 Series Heatless Adsorption Dryers with Activated Carbon Stage",
+      "new_slug": "ka-mt-10-95-series-heatless-adsorption-dryers-with-activated-carbon-stage",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hdk-series-high-pressure-compressed-air-dryers-up-to-50-bar-g/",
+      "product_name": "HDK Series High Pressure Compressed Air Dryers Up To 50 bar g",
+      "new_slug": "hdk-series-high-pressure-compressed-air-dryers-up-to-50-bar-g",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hdk-mt-high-pressure-compressed-air-dryers-up-to-350-bar-g/",
+      "product_name": "HDK-MT High Pressure Compressed Air Dryers Up To 350 bar g",
+      "new_slug": "hdk-mt-high-pressure-compressed-air-dryers-up-to-350-bar-g",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/cdas-hl-medium-flow-heatless-compressed-air-dryer-system/",
+      "product_name": "CDAS HL Medium Flow Heatless Compressed Air Dryer System",
+      "new_slug": "cdas-hl-medium-flow-heatless-compressed-air-dryer-system",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Dryers",
+      "matched_new_site_category": "Compressed Air Dryers",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Dryers'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/cdv-series-time-controlled-condensate-drains-up-to-50-bar-g/",
+      "product_name": "CDV Series Time Controlled Condensate Drains (up to 50 bar g)",
+      "new_slug": "cdv-series-time-controlled-condensate-drains-up-to-50-bar-g",
+      "old_category_raw": "Home / Parker Hannifin India Pvt. Ltd. / Compressed Air Drains",
+      "matched_new_site_category": "Compressed Air Drains",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Drains'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hdf-series-zero-loss-mechanical-float-condensate-drains/",
+      "product_name": "HDF Series Zero Loss Mechanical Float Condensate Drains",
+      "new_slug": "hdf-series-zero-loss-mechanical-float-condensate-drains",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Drains",
+      "matched_new_site_category": "Compressed Air Drains",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Drains'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ed4100-series-electronic-level-sensing-condensate-drains-up-to-50-bar-g/",
+      "product_name": "ED4100 Series Electronic Level Sensing Condensate Drains (up to 50 bar g)",
+      "new_slug": "ed4100-series-electronic-level-sensing-condensate-drains-up-to-50-bar-g",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Drains",
+      "matched_new_site_category": "Compressed Air Drains",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Drains'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/traptronic-trap-series-time-controlled-condensate-drains/",
+      "product_name": "Traptronic TRAP Series Time Controlled Condensate Drains",
+      "new_slug": "traptronic-trap-series-time-controlled-condensate-drains",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Drains",
+      "matched_new_site_category": "Compressed Air Drains",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Drains'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-xplus-genuine-replacement-compressed-air-filter-elements/",
+      "product_name": "OIL-Xplus Genuine Replacement Compressed Air Filter Elements",
+      "new_slug": "oil-xplus-genuine-replacement-compressed-air-filter-elements",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-x-evolution-genuine-replacement-compressed-air-filter-elements/",
+      "product_name": "OIL-X Evolution Genuine Replacement Compressed Air Filter Elements",
+      "new_slug": "oil-x-evolution-genuine-replacement-compressed-air-filter-elements",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/gl-and-gl-plus-genuine-replacement-compressed-air-filter-elements/",
+      "product_name": "GL and GL Plus Genuine Replacement Compressed Air Filter Elements",
+      "new_slug": "gl-and-gl-plus-genuine-replacement-compressed-air-filter-elements",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. > Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/g-gh-f-and-lv-series-genuine-replacement-compressed-air-filter-elements/",
+      "product_name": "G, GH, F and LV Series Genuine Replacement Compressed Air Filter Elements",
+      "new_slug": "g-gh-f-and-lv-series-genuine-replacement-compressed-air-filter-elements",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-x-ovr-oil-vapour-removal-filter/",
+      "product_name": "OIL-X OVR Oil Vapour Removal Filter",
+      "new_slug": "oil-x-ovr-oil-vapour-removal-filter",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-x-carbon-steel-fabricated-compressed-air-filter-for-pressures-up-to-16-bar-g/",
+      "product_name": "OIL-X Carbon Steel Fabricated Compressed Air Filter (For Pressures Up To 16 bar g)",
+      "new_slug": "oil-x-carbon-steel-fabricated-compressed-air-filter-for-pressures-up-to-16-bar-g",
+      "old_category_raw": "Home > Parker Hannifin India Pvt. Ltd. > Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-x-ip50-intermediate-pressure-compressed-air-filter-for-pressures-up-to-50-bar-g/",
+      "product_name": "OIL-X IP50 Intermediate Pressure Compressed Air Filter (For Pressures Up To 50 bar g)",
+      "new_slug": "oil-x-ip50-intermediate-pressure-compressed-air-filter-for-pressures-up-to-50-bar-g",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hyperfilter-compressed-air-filters-for-pressures-up-to-16-bar-g/",
+      "product_name": "Hyperfilter Compressed Air Filters",
+      "new_slug": "hyperfilter-compressed-air-filters",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Filters",
+      "matched_new_site_category": "Filters",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Filters'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/gh-series-high-pressure-compressed-air-filter-for-pressures-up-to-350-bar-g/",
+      "product_name": "Hyperfilter Compressed Air Filters",
+      "new_slug": "hyperfilter-compressed-air-filters-1",
+      "old_category_raw": "Compressed Air Filters",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Filters"
+      ],
+      "content_classification": "B",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Compressed Air Filters' partially overlaps existing new-site category ['Filters'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/gh-series-high-pressure-compressed-air-filter-for-pressures-up-to-100-bar-g/",
+      "product_name": "Parker domnick hunter GH Series High-Pressure Filters",
+      "new_slug": "parker-domnick-hunter-gh-series-high-pressure-filters",
+      "old_category_raw": "Filtration / High-Pressure Filters",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Filters"
+      ],
+      "content_classification": "B",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Filtration / High-Pressure Filters' partially overlaps existing new-site category ['Filters'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hyperchill-plus-kits-and-accessories/",
+      "product_name": "Hyperchill Plus Water Chiller Kits and Accessories",
+      "new_slug": "hyperchill-plus-water-chiller-kits-and-accessories",
+      "old_category_raw": "Water Chillers - Kits & Accessories",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Accessories"
+      ],
+      "content_classification": "B",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Water Chillers - Kits & Accessories' partially overlaps existing new-site category ['Accessories'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/cdas-ofas-and-fbp-service-kits/",
+      "product_name": "CDAS, OFAS and FBP Service Kits",
+      "new_slug": "cdas-ofas-and-fbp-service-kits",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Service Kits",
+      "matched_new_site_category": "Service Kits",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Service Kits'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pco2-maintenance-kits/",
+      "product_name": "PCO2 Carbon Dioxide Quality Incident Protection System Maintenance Kits",
+      "new_slug": "pco2-carbon-dioxide-quality-incident-protection-system-maintenance-kits",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Service Kits",
+      "matched_new_site_category": "Service Kits",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Service Kits'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/k-mt-1-8-and-ka-mt-service-kits/",
+      "product_name": "K-MT 1-8 and KA-MT Service Kits",
+      "new_slug": "k-mt-1-8-and-ka-mt-service-kits",
+      "old_category_raw": "Maintenance & Service Kits",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Service Kits"
+      ],
+      "content_classification": "C",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Maintenance & Service Kits' partially overlaps existing new-site category ['Service Kits'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pneudri-service-kits/",
+      "product_name": "PNEUDRI Compressed Air Dryer Service Kits",
+      "new_slug": "pneudri-compressed-air-dryer-service-kits",
+      "old_category_raw": "Compressed Air Equipment > Maintenance & Service",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Compressed Air Equipment > Maintenance & Service' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/k-mt-ka-mt-ke-mt-kea-mt-ken-and-ken-mt-service-kits/",
+      "product_name": "K-MT, KA-MT, KE-MT, KEA-MT, KEN, and KEN-MT Service Kits (Large Flow Compressed Air Dryer Service Kits)",
+      "new_slug": "k-mt-ka-mt-ke-mt-kea-mt-ken-and-ken-mt-service-kits-large-flow-compressed-air-dryer-service-kits",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Service Kits",
+      "matched_new_site_category": "Service Kits",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Service Kits'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/mx-and-mxle-kits-and-vacuum-pumps/",
+      "product_name": "MX and MXLE Kits and Vacuum Pumps",
+      "new_slug": "mx-and-mxle-kits-and-vacuum-pumps",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Service Kits",
+      "matched_new_site_category": "Service Kits",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Service Kits'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/wvm-service-kits/",
+      "product_name": "WVM Service Kits",
+      "new_slug": "wvm-service-kits",
+      "old_category_raw": "Compressed Air Equipment > Dryer Maintenance",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Compressed Air Equipment > Dryer Maintenance' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/analytical-gas-generator-service-kits/",
+      "product_name": "Analytical Gas Generator Service Kits",
+      "new_slug": "analytical-gas-generator-service-kits",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Service Kits",
+      "matched_new_site_category": "Service Kits",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Service Kits'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/psa-nitrogen-generator-service-kits/",
+      "product_name": "Parker PSA Nitrogen Generator Service Kits",
+      "new_slug": "parker-psa-nitrogen-generator-service-kits",
+      "old_category_raw": "Maintenance & Service Kits",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Service Kits"
+      ],
+      "content_classification": "B",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Maintenance & Service Kits' partially overlaps existing new-site category ['Service Kits'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ed3000-series-electronic-level-sensing-condensate-drains-2/",
+      "product_name": "ED3000 Series Electronic Level Sensing Condensate Drains",
+      "new_slug": "ed3000-series-electronic-level-sensing-condensate-drains",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Compressed Air Drains",
+      "matched_new_site_category": "Compressed Air Drains",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Compressed Air Drains'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hyperchill-industrial-process-chillers/",
+      "product_name": "Hyperchill Industrial Process Chillers",
+      "new_slug": "hyperchill-industrial-process-chillers",
+      "old_category_raw": "Cryogenic Systems - Water Chillers &amp;amp; Cooling Systems",
+      "matched_new_site_category": "Water Chillers & Cooling Systems",
+      "candidate_categories_for_review": [],
+      "content_classification": "B",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Water Chillers & Cooling Systems'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hyperchill-pcw-series/",
+      "product_name": "Hyperchill PCW Series",
+      "new_slug": "hyperchill-pcw-series",
+      "old_category_raw": "Cryogenic Systems > Water Chillers & Cooling Systems",
+      "matched_new_site_category": "Water Chillers & Cooling Systems",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Water Chillers & Cooling Systems'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hyperchill-laser/",
+      "product_name": "Hyperchill Laser",
+      "new_slug": "hyperchill-laser",
+      "old_category_raw": "Industrial Cooling Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Cooling Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hyperchill-plus/",
+      "product_name": "Hyperchill Plus",
+      "new_slug": "hyperchill-plus",
+      "old_category_raw": "Cryogenic Systems - Water Chillers &amp;amp; Cooling Systems",
+      "matched_new_site_category": "Water Chillers & Cooling Systems",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Water Chillers & Cooling Systems'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hyperchill-bioenergy-water-chiller/",
+      "product_name": "Hyperchill BioEnergy Water Chiller",
+      "new_slug": "hyperchill-bioenergy-water-chiller",
+      "old_category_raw": "Cryogenic Systems / Water Chillers & Cooling Systems",
+      "matched_new_site_category": "Water Chillers & Cooling Systems",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Water Chillers & Cooling Systems'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/zero-air-generators-low-flow-up-to-1-l-min/",
+      "product_name": "Zero Air Generators (Low Flow Up To 1 L/min)",
+      "new_slug": "zero-air-generators-low-flow-up-to-1-lmin",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/explosion-proof-zero-air-generator/",
+      "product_name": "Explosion-Proof Zero Air Generator",
+      "new_slug": "explosion-proof-zero-air-generator",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/zero-air-generators/",
+      "product_name": "Zero Air Generators",
+      "new_slug": "zero-air-generators",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/high-purity-nitrogen-and-dry-air-generators/",
+      "product_name": "High Purity Nitrogen and Dry Air Generators",
+      "new_slug": "high-purity-nitrogen-and-dry-air-generators",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/zero-air-generators-for-gc-combustion-detector-applications/",
+      "product_name": "Zero Air Generators",
+      "new_slug": "zero-air-generators-1",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/enoxy-oxygen-membrane-modules/",
+      "product_name": "EnOxy Oxygen Membrane Modules",
+      "new_slug": "enoxy-oxygen-membrane-modules",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/self-contained-nitrogen-generator-for-beverage-dispense/",
+      "product_name": "Self-contained Nitrogen Generator",
+      "new_slug": "self-contained-nitrogen-generator",
+      "old_category_raw": "Not provided in content",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/align-product-series-for-lc-ms-applications/",
+      "product_name": "ALIGN Product Series",
+      "new_slug": "align-product-series",
+      "old_category_raw": "Gas Generators / LC-MS Equipment",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Gas Generators / LC-MS Equipment' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitrogen-generator-for-beverage-dispense/",
+      "product_name": "Parker's Nitrogen Generator for Beverage Dispense",
+      "new_slug": "parkers-nitrogen-generator-for-beverage-dispense",
+      "old_category_raw": "Beverage Dispensing Equipment / Nitrogen Generators",
+      "matched_new_site_category": "Nitrogen Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Nitrogen Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hifluxx-nitrogen-gas-membrane-modules/",
+      "product_name": "HiFluxx Nitrogen Gas Membrane Modules",
+      "new_slug": "hifluxx-nitrogen-gas-membrane-modules",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/uhp-nitrogen-for-icp-spectrometers-and-general-use/",
+      "product_name": "Parker Ultra-High Purity (UHP) Nitrogen Generators",
+      "new_slug": "parker-ultra-high-purity-uhp-nitrogen-generators",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitroflow-lab-mobile-nitrogen-gas-generator-for-lc-ms/",
+      "product_name": "NITROFLOW LAB",
+      "new_slug": "nitroflow-lab",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitrosource-compact-psa-nitrogen-gas-generator/",
+      "product_name": "NITROSource Compact PSA Nitrogen Gas Generator",
+      "new_slug": "nitrosource-compact-psa-nitrogen-gas-generator",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. / Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitrogen-generators-for-lcms-applications/",
+      "product_name": "LCMS Nitrogen Generator",
+      "new_slug": "lcms-nitrogen-generator",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/full-featured-dual-bed-nitrogen-generators/",
+      "product_name": "Full Featured Dual Bed Nitrogen Generators",
+      "new_slug": "full-featured-dual-bed-nitrogen-generators",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/psa-nitrogen-generators-monobed/",
+      "product_name": "MonoBed PSA Nitrogen Generators",
+      "new_slug": "monobed-psa-nitrogen-generators",
+      "old_category_raw": "Not provided in content",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/psa-nitrogen-generators-dual-bed/",
+      "product_name": "PSA Nitrogen Generators - Dual Bed",
+      "new_slug": "psa-nitrogen-generators-dual-bed",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/membrane-nitrogen-generators-hfx-series-industrial-nitrogen-gas-generators/",
+      "product_name": "Membrane Nitrogen Generators - HFX Series Industrial Nitrogen Gas Generators",
+      "new_slug": "membrane-nitrogen-generators-hfx-series-industrial-nitrogen-gas-generators",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/smartfluxx-nitrogen-gas-membrane-modules/",
+      "product_name": "SmartFluxx Nitrogen Gas Membrane Modules",
+      "new_slug": "smartfluxx-nitrogen-gas-membrane-modules",
+      "old_category_raw": "Not provided in content",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitrogen-generators-for-lc-ms-applications-with-optional-economy-mode/",
+      "product_name": "Nitrogen Generators for LC/MS Applications",
+      "new_slug": "nitrogen-generators-for-lcms-applications",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitrogen-generators-for-agilent-6400-6500-lc-ms-instruments/",
+      "product_name": "Nitrogen Generators for Agilent 6400 & 6500 LC/MS instruments",
+      "new_slug": "nitrogen-generators-for-agilent-6400-6500-lcms-instruments",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitrosource-psa-nitrogen-gas-generator/",
+      "product_name": "NITROSource",
+      "new_slug": "nitrosource",
+      "old_category_raw": "Not specified in provided content",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hydrogen-generators-for-gc-gc-ms-fuel-and-carrier-gas-applications/",
+      "product_name": "Hydrogen Generators For GC & GC/MS Fuel and Carrier Gas Applications",
+      "new_slug": "hydrogen-generators-for-gc-gcms-fuel-and-carrier-gas-applications",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/fid-gas-stations/",
+      "product_name": "Parker Balston FID Gas Stations",
+      "new_slug": "parker-balston-fid-gas-stations",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hydrogen-generators-for-fuel-and-carrier-gas/",
+      "product_name": "Hydrogen Generators for Fuel and Carrier Gas",
+      "new_slug": "hydrogen-generators-for-fuel-and-carrier-gas",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hydrogen-generators-for-fuel-gas/",
+      "product_name": "Parker's Hydrogen Generators for Fuel Gas",
+      "new_slug": "parkers-hydrogen-generators-for-fuel-gas",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hydrogen-generators-for-gc-and-gc-ms-carrier-gas-applications/",
+      "product_name": "Hydrogen Generators",
+      "new_slug": "hydrogen-generators",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hydrogen-generators-for-gc-fuel-gas-applications/",
+      "product_name": "Hydrogen Generators for GC fuel gas applications",
+      "new_slug": "hydrogen-generators-for-gc-fuel-gas-applications",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ft-ir-purge-gas-generators/",
+      "product_name": "FT-IR Purge Gas Generators",
+      "new_slug": "ft-ir-purge-gas-generators",
+      "old_category_raw": "Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/toc-gas-generators/",
+      "product_name": "Parker's TOC Gas Generators",
+      "new_slug": "parkers-toc-gas-generators",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/atomic-absorption-gas-purifier/",
+      "product_name": "Parker's Atomic Absorption Gas Purifier",
+      "new_slug": "parkers-atomic-absorption-gas-purifier",
+      "old_category_raw": "Parker Hannifin India Pvt. Ltd. - Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ultra-dry-gas-generator/",
+      "product_name": "Ultra Dry Gas Generator (Parker Model UDA-300)",
+      "new_slug": "ultra-dry-gas-generator-parker-model-uda-300",
+      "old_category_raw": "Gas Generators",
+      "matched_new_site_category": "Gas Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Gas Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/gt-plus-1500-ultra-zero-air-generator/",
+      "product_name": "GT Plus Ultra-Zero Air Generator",
+      "new_slug": "gt-plus-ultra-zero-air-generator",
+      "old_category_raw": null,
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/gc-plus-1500-zero-air-generator/",
+      "product_name": "GC Plus Zero Air Generator",
+      "new_slug": "gc-plus-zero-air-generator",
+      "old_category_raw": null,
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pg-plus-100-fid-tower-hydrogen-zero-air-generator/",
+      "product_name": "PG Plus FID Tower Hydrogen + Zero Air Generator",
+      "new_slug": "pg-plus-fid-tower-hydrogen-zero-air-generator",
+      "old_category_raw": null,
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nm-plus-100-fid-station-hydrogen-zero-air-generator/",
+      "product_name": "NM Plus FID Station Hydrogen + Zero Air Generator",
+      "new_slug": "nm-plus-fid-station-hydrogen-zero-air-generator",
+      "old_category_raw": null,
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nm-plus-100-fid-tower-hydrogen-zero-air-generator/",
+      "product_name": "NM Plus 100 FID Tower Hydrogen + Zero Air Generator",
+      "new_slug": "nm-plus-100-fid-tower-hydrogen-zero-air-generator",
+      "old_category_raw": null,
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "C",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pg-plus-rack-hydrogen-zero-air-generator/",
+      "product_name": "PG Plus Rack Hydrogen + Zero Air Generator",
+      "new_slug": "pg-plus-rack-hydrogen-zero-air-generator",
+      "old_category_raw": "Hydrogen + Zero Air Generators",
+      "matched_new_site_category": "Hydrogen + Zero Air Generator",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Hydrogen + Zero Air Generator'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/stirling-medical-oxygen-plant/",
+      "product_name": "Stirling Medical Oxygen Plant",
+      "new_slug": "stirling-medical-oxygen-plant",
+      "old_category_raw": "Stirling Cryogenics India Pvt Ltd > Medical Oxygen Plant",
+      "matched_new_site_category": "Medical Oxygen Plant",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Medical Oxygen Plant'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/gc-plus-1800-rack-zero-air-generator/",
+      "product_name": "GC Plus Rack Zero Air Generator",
+      "new_slug": "gc-plus-rack-zero-air-generator",
+      "old_category_raw": null,
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "No usable category information extracted from old site for this product."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/ptc330-cryocooler/",
+      "product_name": "PTC330 CRYOCOOLER",
+      "new_slug": "ptc330-cryocooler",
+      "old_category_raw": "Products > Cryogenic Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Products > Cryogenic Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-free-air-compressors/",
+      "product_name": "Oil Free Air Compressors",
+      "new_slug": "oil-free-air-compressors",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/liquid-oxygen-cryocooler/",
+      "product_name": "Liquid Oxygen Cryocooler",
+      "new_slug": "liquid-oxygen-cryocooler",
+      "old_category_raw": "Cryogenic Systems > Liquid Oxygen (LOX)",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Cryogenic Systems > Liquid Oxygen (LOX)' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/reciprocating-compressors-compair/",
+      "product_name": "Heavy-Duty CompAir Two-Stage Reciprocating Compressors",
+      "new_slug": "heavy-duty-compair-two-stage-reciprocating-compressors",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/fixed-speed-rotary-screw-compressor-2-7-5-kw/",
+      "product_name": "Fixed speed rotary screw compressor 2 - 7.5 kW",
+      "new_slug": "fixed-speed-rotary-screw-compressor-2-75-kw",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/stirling-medical-oxygen-generator/",
+      "product_name": "Stirling Medical Oxygen Generator",
+      "new_slug": "stirling-medical-oxygen-generator",
+      "old_category_raw": "Stirling Cryogenics India Pvt Ltd > Medical Oxygen Plant",
+      "matched_new_site_category": "Medical Oxygen Plant",
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "READY_TO_MIGRATE",
+      "status_reason": "Old category leaf matches existing new-site category 'Medical Oxygen Plant'."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/single-and-two-stage-lubricated-screw-compressors-160-250-kw/",
+      "product_name": "Single and Two-Stage Lubricated Screw Compressors 160 - 250 kW",
+      "new_slug": "single-and-two-stage-lubricated-screw-compressors-160-250-kw",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-free-screw-compressors/",
+      "product_name": "Oil Free Screw Compressors",
+      "new_slug": "oil-free-screw-compressors",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/two-stage-oil-free-rotary-screw-compressors-ds-series/",
+      "product_name": "Two Stage Oil Free Rotary Screw Compressors DS – Series",
+      "new_slug": "two-stage-oil-free-rotary-screw-compressors-ds-series",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/100-oil-free-rotary-screw-compressors-fixed-regulated-speed-rs/",
+      "product_name": "100% Oil-Free Rotary Screw Compressors Fixed & Regulated Speed (RS)",
+      "new_slug": "100-oil-free-rotary-screw-compressors-fixed-regulated-speed-rs",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/oil-free-rotary-screw-compressors/",
+      "product_name": "Oil-Free Rotary Screw Compressors",
+      "new_slug": "oil-free-rotary-screw-compressors",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/two-stage-oil-free-rotary-screw-compressors/",
+      "product_name": "Two Stage Oil-Free Rotary Screw Compressors",
+      "new_slug": "two-stage-oil-free-rotary-screw-compressors",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/lubricated-rotary-screw-compressor-23-29-kw/",
+      "product_name": "Lubricated Rotary Screw Compressor 23 - 29 kW",
+      "new_slug": "lubricated-rotary-screw-compressor-23-29-kw",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/lubricated-rotary-screw-compressor-30-45-kw/",
+      "product_name": "Lubricated Rotary Screw Compressor 30 - 45 kW",
+      "new_slug": "lubricated-rotary-screw-compressor-30-45-kw",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/lubricated-rotary-screw-compressor-l45-l55-kw/",
+      "product_name": "Lubricated Rotary Screw Compressor L45 - L55 kW",
+      "new_slug": "lubricated-rotary-screw-compressor-l45-l55-kw",
+      "old_category_raw": "Industrial Segment / Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment / Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/lubricated-rotary-screw-compressor-55-75-kw/",
+      "product_name": "Lubricated Rotary Screw Compressor 55 - 75 kW",
+      "new_slug": "lubricated-rotary-screw-compressor-55-75-kw",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/lubricated-rotary-screw-compressor-90-132-kw/",
+      "product_name": "Lubricated Rotary Screw Compressor 90 - 132 kW",
+      "new_slug": "lubricated-rotary-screw-compressor-90-132-kw",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/liquid-nitrogen-lin/",
+      "product_name": "Liquid Nitrogen (LIN)",
+      "new_slug": "liquid-nitrogen-lin",
+      "old_category_raw": "Cryogenic Systems > Liquid Nitrogen (LIN)",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Cryogenic Systems > Liquid Nitrogen (LIN)' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/lubricated-rotary-screw-compressor-7-22-kw/",
+      "product_name": "Lubricated Rotary Screw Compressor 7 - 22 kW",
+      "new_slug": "lubricated-rotary-screw-compressor-7-22-kw",
+      "old_category_raw": "Industrial Segment > Air Compression Systems",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [],
+      "content_classification": "A",
+      "status": "CATEGORY_NOT_BUILT",
+      "status_reason": "Old-site category 'Industrial Segment > Air Compression Systems' does not correspond to any of the 13 categories currently built on the new website."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pg-plus-100-fid-station-hydrogen-zero-air-generator/",
+      "product_name": "PG Plus FID Station Hydrogen + Zero Air Generator",
+      "new_slug": "pg-plus-fid-station-hydrogen-zero-air-generator",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pg-plus-hydrogen-generators-2/",
+      "product_name": "PG Plus Hydrogen Generators",
+      "new_slug": "pg-plus-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "B",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pg-plus-fid-station-hydrogen-generators/",
+      "product_name": "PG Plus FID Station Hydrogen Generators",
+      "new_slug": "pg-plus-fid-station-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "B",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nm-plus-fid-tower-hydrogen-generators/",
+      "product_name": "NM Plus FID Tower Hydrogen Generators",
+      "new_slug": "nm-plus-fid-tower-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nm-plus-fid-station-hydrogen-generators/",
+      "product_name": "NM Plus FID Station Hydrogen Generators",
+      "new_slug": "nm-plus-fid-station-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/pg-plus-hydrogen-generators/",
+      "product_name": "PG Plus Rack Hydrogen Generators",
+      "new_slug": "pg-plus-rack-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nm-plus-rack-hydrogen-generators/",
+      "product_name": "NM Plus Rack Hydrogen Generators",
+      "new_slug": "nm-plus-rack-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/hk-plus-hydrogen-generators/",
+      "product_name": "HK Plus Hydrogen Generators",
+      "new_slug": "hk-plus-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nm-plus-hydrogen-generators/",
+      "product_name": "NM Plus Hydrogen Generators",
+      "new_slug": "nm-plus-hydrogen-generators",
+      "old_category_raw": "Industrial Segment > Hydrogen",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Hydrogen + Zero Air Generator",
+        "Hydrogen Generator",
+        "Green Hydrogen"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > Hydrogen' partially overlaps existing new-site categories ['Hydrogen + Zero Air Generator', 'Hydrogen Generator', 'Green Hydrogen'] but is not an exact match — needs a human decision, not auto-forced."
+    },
+    {
+      "old_url": "https://stirlingcryogenics.co.in/product/nitrogen-gas-generator/",
+      "product_name": "Nitrogen Gas Generator",
+      "new_slug": "nitrogen-gas-generator",
+      "old_category_raw": "Industrial Segment > PSA Nitrogen Gas Generator",
+      "matched_new_site_category": null,
+      "candidate_categories_for_review": [
+        "Gas Generator",
+        "Nitrogen Generator"
+      ],
+      "content_classification": "A",
+      "status": "MANUAL_REVIEW",
+      "status_reason": "Old-site category 'Industrial Segment > PSA Nitrogen Gas Generator' partially overlaps existing new-site categories ['Gas Generator', 'Nitrogen Generator'] but is not an exact match — needs a human decision, not auto-forced."
+    }
+  ]
+}

@@ -3,26 +3,20 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ArrowRight, Play } from "lucide-react";
 
+// Background images are real Stirling Cryogenics installation photos sourced
+// from the old site (public/images/homepage/) — not stock photography.
+// Copy/headline text is unchanged from the existing new-site hero (no reliable
+// old-site hero copy was recoverable, so existing approved text is kept).
 const SLIDES = [
   {
-    img: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1600&q=85",
+    img: "/images/homepage/hero-liquid-nitrogen-plant.webp",
     title: "Advanced Cryogenic\nsolutions for Industry",
     sub: "Reliable, Energy-Efficient Cryogenic system for medical,\nresearch & Industrial use.",
   },
   {
-    img: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1600&q=85",
+    img: "/images/homepage/hero-liquid-oxygen-plant.webp",
     title: "Innovative Nitrogen\nSystems Worldwide",
     sub: "State-of-the-art nitrogen and oxygen generators\nleveraging cutting-edge PSA technology.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=1600&q=85",
-    title: "Trusted by 700+\nInstallations Globally",
-    sub: "Over 70 years of expertise powering advancements\nin cryogenic technology across industries.",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=85",
-    title: "Precision Cryogenic\nSolutions for Science",
-    sub: "Enabling breakthroughs in healthcare, space,\nresearch and industrial applications.",
   },
 ];
 
