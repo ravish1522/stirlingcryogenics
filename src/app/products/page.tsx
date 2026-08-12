@@ -22,6 +22,8 @@ const CATEGORY_NAMES = [
     "Zero Air Generator",
     "Accessories",
     "Green Hydrogen",
+    "Air Compression Systems",
+    "Cryogenic Systems",
 ];
 
 const CATEGORIES = [
