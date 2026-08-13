@@ -2,14 +2,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
+import { CATEGORIES } from "@/data/categories";
 
-const PRODUCTS = [
-  { label: "Liquid Nitrogen (LN) Fabrum", href: "/products" },
-  { label: "Liquid Oxygen (LOX) Fabrum", href: "/products" },
-  { label: "CompAir Air Compressor", href: "/products" },
-  { label: "Hydrogen Generator", href: "/products" },
-  { label: "LNG", href: "/products" },
-];
+// The 14 currently-populated product categories (see src/data/categories.ts).
+// No vendor/partner names, no empty categories, no old-site placeholder
+// categories are included here.
+const PRODUCTS = CATEGORIES.map((c) => ({ label: c.name, href: `/products/${c.slug}` }));
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
