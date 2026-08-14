@@ -37,7 +37,7 @@ const CATEGORIES = [
 
 const ALL_PRODUCTS = PRODUCTS;
 
-const PER_PAGE = 6;
+const PER_PAGE = 15;
 
 export default function ProductsPage() {
     const [brandOpen, setBrandOpen] = useState(false);

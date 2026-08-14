@@ -2,22 +2,24 @@ import Link from "next/link";
 import { ImageOff } from "lucide-react";
 import { Product } from "@/data/products";
 
-// Extracted verbatim from src/app/products/page.tsx's product grid so the
-// exact same card design is shared between /products and the dedicated
-// category listing pages. No visual or behavioral change from the original
-// inline markup.
+// Shared product card used by /products and the dedicated category listing
+// pages. The entire card is one link to the product detail page (no nested
+// <a> elements — "Learn More" is a styled <span> inside the same Link).
+// Images use object-contain (not cover) so the full product is always
+// visible within a fixed-height container, never cropped or stretched.
 export default function ProductCard({ product }: { product: Product }) {
     return (
-        <div
-            className="bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
+        <Link
+            href={`/products/${product.slug}`}
+            className="group block bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
             style={{ border: "1px solid #E5E7EB", boxShadow: "0 2px 12px rgba(0,0,0,0.05)" }}
         >
-            <div className="w-full overflow-hidden bg-gray-50" style={{ height: 200 }}>
+            <div className="w-full overflow-hidden bg-gray-50 flex items-center justify-center" style={{ height: 200 }}>
                 {product.img ? (
                     <img
                         src={product.img}
                         alt={product.title}
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                        className="w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
                     />
                 ) : (
                     <div className="w-full h-full flex flex-col items-center justify-center gap-1.5 text-gray-300">
@@ -43,10 +45,10 @@ export default function ProductCard({ product }: { product: Product }) {
                         </span>
                     )}
                 </div>
-                <Link href={`/products/${product.slug}`} className="shrink-0 text-xs font-semibold whitespace-nowrap" style={{ color: "#00B4D8" }}>
+                <span className="shrink-0 text-xs font-semibold whitespace-nowrap" style={{ color: "#00B4D8" }}>
                     Learn More
-                </Link>
+                </span>
             </div>
-        </div>
+        </Link>
     );
 }
