@@ -2269,3 +2269,10 @@ export const PRODUCTS: Product[] = [
 
 export const PRODUCT_CATEGORIES = Array.from(new Set(PRODUCTS.map((p) => p.category)));
 export const PRODUCT_BRANDS = Array.from(new Set(PRODUCTS.map((p) => p.brand).filter((b): b is string => Boolean(b))));
+
+// Returns up to `limit` other products sharing the same category as `product`,
+// excluding the product itself. Used to populate the "Related Products" section
+// on the product detail page. Does not pad with unrelated products.
+export function getRelatedProducts(product: Product, limit = 4): Product[] {
+    return PRODUCTS.filter((p) => p.category === product.category && p.slug !== product.slug).slice(0, limit);
+}
