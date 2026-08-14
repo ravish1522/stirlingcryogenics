@@ -5,27 +5,57 @@ import { APPLICATIONS } from "@/data/applications";
 export default function ApplicationsPage() {
     return (
         <div className="bg-white min-h-screen">
-            <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-                {/* Heading */}
-                <div className="text-center mb-12">
-          <span
-              className="inline-block text-sm font-semibold mb-3"
-              style={{ color: "#00B4D8" }}
-          >
-            Our Applications
-          </span>
-                    <h1
-                        className="font-bold text-gray-900 mb-4"
-                        style={{ fontSize: "clamp(1.6rem,3.5vw,2.2rem)" }}
-                    >
-                        Cryogenic Solutions Across Industries
-                    </h1>
-                    <p className="text-gray-500 text-sm leading-relaxed max-w-lg mx-auto">
-                        Our advanced cryogenic systems support critical applications across
-                        research, healthcare, space exploration, and industrial sectors worldwide.
-                    </p>
+            {/* HERO */}
+            <section className="relative overflow-hidden">
+                <div className="relative" style={{ minHeight: 380 }}>
+                    <div
+                        className="absolute inset-0"
+                        style={{
+                            backgroundImage: "url('/images/homepage/hero-cryogenic-systems-2.webp')",
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                        }}
+                    />
+                    <div
+                        className="absolute inset-0"
+                        style={{
+                            background:
+                                "linear-gradient(105deg, rgba(0,30,80,0.94) 0%, rgba(0,55,125,0.82) 42%, rgba(0,85,165,0.45) 75%, rgba(0,110,190,0.16) 100%)",
+                        }}
+                    />
+                    <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-28">
+                        <div className="max-w-[660px]">
+                            <span
+                                className="inline-block text-[13px] font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
+                                style={{ color: "#fff", background: "rgba(255,255,255,0.14)", border: "1px solid rgba(255,255,255,0.4)" }}
+                            >
+                                Our Applications
+                            </span>
+                            <h1
+                                className="text-white font-extrabold leading-[1.1] mb-6"
+                                style={{ fontSize: "clamp(2rem,5vw,3rem)", textShadow: "0 2px 24px rgba(0,0,0,0.35)" }}
+                            >
+                                Cryogenic Solutions Across Industries
+                            </h1>
+                            <p className="text-blue-100 text-sm sm:text-base leading-relaxed mb-8 max-w-lg">
+                                Our advanced cryogenic systems support critical applications across
+                                research, healthcare, space exploration, and industrial sectors worldwide.
+                            </p>
+                            <Link
+                                href="/contact"
+                                className="inline-flex items-center gap-2 font-semibold rounded-xl px-8 py-4 transition-all duration-200 hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
+                                style={{ background: "#00B4D8", color: "#fff", fontSize: 16, boxShadow: "0 6px 28px rgba(0,180,216,0.55)" }}
+                            >
+                                Get A Quote
+                                <ArrowRight className="w-4 h-4" />
+                            </Link>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
                 {/* 2-column card grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -62,7 +92,7 @@ export default function ApplicationsPage() {
                                 </p>
                                 <Link
                                     href={`/applications/${app.slug}`}
-                                    className="inline-flex items-center gap-2 bg-white text-gray-800 px-5 py-2.5 rounded-full text-xs font-semibold transition-all w-fit hover:bg-[#00B4D8] hover:text-white"
+                                    className="inline-flex items-center gap-2 bg-white text-gray-800 px-5 py-2.5 rounded-full text-xs font-semibold transition-all w-fit hover:bg-[#00B4D8] hover:text-white focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
                                 >
                                     Learn More <ArrowRight className="w-3.5 h-3.5" />
                                 </Link>

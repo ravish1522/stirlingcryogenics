@@ -71,8 +71,8 @@ export default function ApplicationDetailPage() {
                             decades of expertise and a global network of installations.
                         </p>
                     </div>
-                    <div className="relative rounded-2xl overflow-hidden" style={{ height: 280 }}>
-                        <img src={app.img} alt={app.title} className="w-full h-full object-cover" />
+                    <div className="relative rounded-2xl overflow-hidden shadow-sm" style={{ height: 320, border: "1px solid #E5E7EB" }}>
+                        <img src={app.img} alt={app.title} className="w-full h-full object-cover object-center" />
                         <div className="absolute inset-0"
                              style={{ background: "linear-gradient(135deg,rgba(13,45,107,0.5) 0%,transparent 60%)" }} />
                     </div>
@@ -156,12 +156,12 @@ export default function ApplicationDetailPage() {
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                     <Link href="/contact"
-                          className="inline-flex items-center gap-2 font-semibold text-sm px-7 py-3 rounded-full text-white"
+                          className="inline-flex items-center gap-2 font-semibold text-sm px-7 py-3 rounded-full text-white focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
                           style={{ background: "#00B4D8" }}>
                         Get a Quote <ChevronRight className="w-4 h-4" />
                     </Link>
                     <Link href="/applications"
-                          className="inline-flex items-center gap-2 font-semibold text-sm px-7 py-3 rounded-full text-white"
+                          className="inline-flex items-center gap-2 font-semibold text-sm px-7 py-3 rounded-full text-white focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2"
                           style={{ border: "2px solid rgba(255,255,255,0.5)" }}>
                         All Applications
                     </Link>

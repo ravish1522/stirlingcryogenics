@@ -6,7 +6,7 @@ export const APPLICATIONS = [
         heroTitle: "Green Hydrogen System Overview",
         shortDesc: "Efficient hydrogen production using advanced cryogenic technology for reliable and high-performance applications.",
         heroDesc: "Green Hydrogen System by CPH2, developed in collaboration with AFCryo, featuring a unique membrane-free electrolysis process enhanced by cryogenic cooling.",
-        img: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=800&q=80",
+        img: "/images/green-hydrogen/electrolysers.png",
         features: [
             { icon: "shield", title: "Long-Term Reliability", desc: "Delivers efficient and consistent production for over 25 years, ensuring reliable performance you can depend on." },
             { icon: "trending-up", title: "Dual Revenues", desc: "Delivers high-purity hydrogen and oxygen streams with consistent quality and reliable performance." },
@@ -38,7 +38,7 @@ export const APPLICATIONS = [
         heroTitle: "Animal Science Cryogenic Solutions",
         shortDesc: "Enhancing bio-preservation in animal science research through advanced cryogenic technology for better accuracy and long-term storage.",
         heroDesc: "Advanced cryogenic solutions for animal science research, enabling precise bio-preservation and long-term sample storage with industry-leading reliability.",
-        img: "https://images.unsplash.com/photo-1560787313-5dff3307e257?w=800&q=80",
+        img: "https://images.unsplash.com/photo-1770836037793-95bdbf190f71?q=80&w=1600&auto=format&fit=crop",
         features: [
             { icon: "shield", title: "Precise Preservation", desc: "Ultra-low temperature storage maintains sample integrity for decades of reliable use." },
             { icon: "trending-up", title: "Research Accuracy", desc: "Consistent temperature control ensures reproducible results across all research applications." },
@@ -63,7 +63,7 @@ export const APPLICATIONS = [
         heroTitle: "Food & Beverage Cryogenic Solutions",
         shortDesc: "Revolutionary cryogenic freezing solutions for the food industry, ensuring better quality, freshness, and longer shelf life.",
         heroDesc: "Cryogenic freezing technology delivers superior product quality, extending shelf life while preserving taste, nutrition, and texture.",
-        img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80",
+        img: "/images/homepage/industry-food-beverage.webp",
         features: [
             { icon: "shield", title: "Superior Quality", desc: "Cryogenic freezing preserves cellular structure for unmatched taste and texture." },
             { icon: "trending-up", title: "Extended Shelf Life", desc: "Ultra-rapid freezing dramatically extends product shelf life and reduces waste." },
@@ -87,7 +87,7 @@ export const APPLICATIONS = [
         heroTitle: "High Temperature Superconductor Solutions",
         shortDesc: "Essential for cooling high-temperature semiconductors using advanced cryogenic technology to ensure stable performance and efficiency.",
         heroDesc: "Precision cryogenic cooling systems for high-temperature superconductor applications, enabling next-generation power and electronics systems.",
-        img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+        img: "/images/products/nitroflow-lab.webp",
         features: [
             { icon: "shield", title: "Stable Cooling", desc: "Maintains precise temperatures critical for superconductor operation." },
             { icon: "trending-up", title: "High Efficiency", desc: "Optimised cooling cycles minimise energy consumption." },
@@ -110,7 +110,7 @@ export const APPLICATIONS = [
         heroTitle: "LNG Cryogenic Processing Solutions",
         shortDesc: "Essential for efficient LNG processing and storage, using advanced cryogenic technology to ensure safety, reliability, and performance.",
         heroDesc: "Comprehensive liquefied natural gas solutions for processing, storage, and distribution with industry-leading safety and efficiency.",
-        img: "https://images.unsplash.com/photo-1518818419601-72c8673f5852?w=800&q=80",
+        img: "/images/homepage/industry-lng-bio-gas.webp",
         features: [
             { icon: "shield", title: "Safety First", desc: "Rigorous safety systems designed for the demands of LNG operations." },
             { icon: "trending-up", title: "High Efficiency", desc: "Optimised processes maximise LNG production and storage efficiency." },
@@ -133,7 +133,7 @@ export const APPLICATIONS = [
         heroTitle: "Research & University Cryogenic Solutions",
         shortDesc: "Advancing scientific research with advanced cryogenic applications, enabling precise results and reliable long-term experimentation.",
         heroDesc: "Purpose-built cryogenic solutions for academic and research institutions, supporting breakthrough discoveries across disciplines.",
-        img: "https://images.unsplash.com/photo-1532094349884-543559c97852?w=800&q=80",
+        img: "/images/homepage/industry-research.webp",
         features: [
             { icon: "shield", title: "Research Grade", desc: "Systems built to the highest standards of scientific precision and repeatability." },
             { icon: "trending-up", title: "Versatile Applications", desc: "Supporting physics, chemistry, biology, materials science and more." },
@@ -156,7 +156,7 @@ export const APPLICATIONS = [
         heroTitle: "Space Observatory Cryogenic Systems",
         shortDesc: "Equipping space observatories with cryocoolers for sensitive astronomical instruments.",
         heroDesc: "Specialised cryogenic cooling solutions for space-based and ground-based astronomical observatories and sensitive detection systems.",
-        img: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800&q=80",
+        img: "/images/homepage/industry-space-observatory.webp",
         features: [
             { icon: "shield", title: "Space Heritage", desc: "Flight-proven cryogenic technology for the most demanding environments." },
             { icon: "trending-up", title: "Ultra-Low Noise", desc: "Vibration-free cooling critical for precision optical instruments." },
@@ -179,7 +179,7 @@ export const APPLICATIONS = [
         heroTitle: "Healthcare Cryogenic Solutions",
         shortDesc: "Supporting medical advancements with cryogenic solutions for drug preservation and research.",
         heroDesc: "Medical-grade cryogenic solutions supporting pharmaceutical research, biobanking, clinical applications, and drug preservation.",
-        img: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&q=80",
+        img: "/images/homepage/industry-healthcare.webp",
         features: [
             { icon: "shield", title: "GMP Compliant", desc: "Systems meeting pharmaceutical manufacturing good practice standards." },
             { icon: "trending-up", title: "Patient Safety", desc: "Medical-grade systems with redundant safety protocols and alarms." },
@@ -202,7 +202,7 @@ export const APPLICATIONS = [
         heroTitle: "Biological Sample Storage Solutions",
         shortDesc: "Preserving biological samples with reliable, ultra-low temperature cryogenic technology.",
         heroDesc: "State-of-the-art biological sample cryopreservation systems ensuring long-term viability for research and clinical applications.",
-        img: "https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=800&q=80",
+        img: "/images/homepage/industry-bio-storage.webp",
         features: [
             { icon: "shield", title: "Sample Integrity", desc: "Ultra-low temperatures preserve sample viability for decades." },
             { icon: "trending-up", title: "Full Traceability", desc: "Barcode and RFID sample tracking for complete chain of custody." },
@@ -225,7 +225,7 @@ export const APPLICATIONS = [
         heroTitle: "Nuclear Application Cryogenic Solutions",
         shortDesc: "Supporting nuclear research and operations with critical cryogenic cooling technology.",
         heroDesc: "Specialised cryogenic systems designed for nuclear research facilities and power generation applications with full regulatory compliance.",
-        img: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&q=80",
+        img: "/images/homepage/industry-nuclear.webp",
         features: [
             { icon: "shield", title: "Radiation Resistant", desc: "Components designed for operation in high-radiation environments." },
             { icon: "trending-up", title: "Nuclear Qualified", desc: "Meeting IAEA and national nuclear regulatory requirements." },

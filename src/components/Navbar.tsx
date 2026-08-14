@@ -78,7 +78,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0">
             <img
-                src="https://i.ibb.co/qFxsj79s/logo-dark.png"          // place your logo in the /public folder
+                src="/logo-dark.png"
                 alt="Company Logo"
                 className="h-16 w-auto"  // adjust height as needed
             />

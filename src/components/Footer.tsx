@@ -139,7 +139,7 @@ export default function Footer() {
 
             <Link href="/" className="flex items-center shrink-0">
               <img
-                  src="https://i.ibb.co/qFxsj79s/logo-dark.png"
+                  src="/logo-dark.png"
                   alt="Stirling Cryogenics Logo"
                   className="h-14 w-auto brightness-0 invert"
               />
