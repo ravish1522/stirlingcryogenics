@@ -32,7 +32,7 @@ const CERTIFICATES: Certificate[] = [
         meta: [
             { label: "Udyam Registration No.", value: "UDYAM-UP-28-0010634" },
         ],
-        previewSrc: "/certificates/msme-udyam-registration.jpg",
+        previewSrc: "/certificates/certifications6-2.jpg",
         pdfSrc: null,
         alt: "MSME Udyam Registration certificate issued to Stirling Cryogenics India Private Limited",
         color: "#F0FDF4",
