@@ -74,7 +74,7 @@ export default function Navbar() {
 
             <Link href="/about" className="text-sm font-medium text-gray-700 hover:text-[#00B4D8] transition-colors">About</Link>
             <Link href="/blogs" className="text-sm font-medium text-gray-700 hover:text-[#00B4D8] transition-colors">Blogs</Link>
-            <Link href="#contact" className="text-sm font-medium text-gray-700 hover:text-[#00B4D8] transition-colors">Contact us</Link>
+            <Link href="/contact" className="text-sm font-medium text-gray-700 hover:text-[#00B4D8] transition-colors">Contact us</Link>
           </div>
 
           {/* Mobile toggle */}
@@ -101,7 +101,7 @@ export default function Navbar() {
               </div>
             )}
             {["About", "Blogs", "Contact us"].map((l) => (
-              <Link key={l} href={l === "Contact us" ? "#contact" : "#"}
+              <Link key={l} href={l === "Contact us" ? "/contact" : "#"}
                 className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:bg-gray-50">{l}</Link>
             ))}
           </div>
