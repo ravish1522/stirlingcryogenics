@@ -1,6 +1,8 @@
 "use client";
-import { useState } from "react";
-import { MapPin } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { MapPin, Leaf, Users, Award, X } from "lucide-react";
+import Applications from "@/components/Applications";
+import ProductsInAction from "@/components/ProductsInAction";
 
 const STATS = [
     { value: "700+", label: "installations completed" },
@@ -10,14 +12,133 @@ const STATS = [
     { value: "70+",  label: "Years Of Experience" },
 ];
 
-const CERTS = [
-    { label: "MSME-Zed Gold", color: "#FFF7ED", border: "#FED7AA" },
-    { label: "MSME-Udyam",    color: "#F0FDF4", border: "#BBF7D0" },
-    { label: "ISO 9001:2015", color: "#EFF6FF", border: "#BFDBFE" },
+interface Certificate {
+    id: string;
+    title: string;
+    issuer: string;
+    meta: { label: string; value: string }[];
+    previewSrc: string | null;
+    pdfSrc: string | null;
+    alt: string;
+    color: string;
+    border: string;
+}
+
+const CERTIFICATES: Certificate[] = [
+    {
+        id: "msme-zed-gold",
+        title: "MSME Sustainable (ZED) Certification — Gold",
+        issuer: "Ministry of Micro, Small & Medium Enterprises",
+        meta: [
+            { label: "Udyam Registration", value: "UDYAM-UP-28-0010634" },
+            { label: "Issued", value: "March 6, 2026" },
+            { label: "Validity", value: "3 years from date of issue" },
+        ],
+        previewSrc: "/certificates/msme-zed-gold-certificate-preview.jpg",
+        pdfSrc: "/certificates/msme-zed-gold-certificate.pdf",
+        alt: "MSME ZED Gold Certification awarded to Stirling Cryogenics India",
+        color: "#FFF7ED",
+        border: "#FED7AA",
+    },
+    {
+        id: "msme-udyam",
+        title: "MSME-Udyam Registration",
+        issuer: "Ministry of Micro, Small & Medium Enterprises",
+        meta: [],
+        previewSrc: null,
+        pdfSrc: null,
+        alt: "MSME Udyam registration certification",
+        color: "#F0FDF4",
+        border: "#BBF7D0",
+    },
+    {
+        id: "iso-9001",
+        title: "ISO 9001:2015",
+        issuer: "Quality Management System",
+        meta: [],
+        previewSrc: null,
+        pdfSrc: null,
+        alt: "ISO 9001:2015 quality management certification",
+        color: "#EFF6FF",
+        border: "#BFDBFE",
+    },
 ];
 
+function CertificateModal({ cert, onClose }: { cert: Certificate; onClose: () => void }) {
+    const closeBtnRef = useRef<HTMLButtonElement>(null);
+
+    useEffect(() => {
+        closeBtnRef.current?.focus();
+        const onKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") onClose();
+        };
+        document.addEventListener("keydown", onKeyDown);
+        return () => document.removeEventListener("keydown", onKeyDown);
+    }, [onClose]);
+
+    return (
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            style={{ background: "rgba(15,23,42,0.6)" }}
+            onClick={onClose}
+        >
+            <div
+                role="dialog"
+                aria-modal="true"
+                aria-label={cert.title}
+                className="bg-white rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-auto relative"
+                onClick={(e) => e.stopPropagation()}
+            >
+                <button
+                    ref={closeBtnRef}
+                    onClick={onClose}
+                    aria-label="Close certificate viewer"
+                    className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-white flex items-center justify-center shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
+                    style={{ border: "1px solid #E5E7EB" }}
+                >
+                    <X className="w-4 h-4 text-gray-700" />
+                </button>
+                <div className="p-4 sm:p-6">
+                    <h3 className="font-bold text-gray-900 text-lg mb-1">{cert.title}</h3>
+                    <p className="text-sm text-gray-500 mb-4">{cert.issuer}</p>
+                    {cert.pdfSrc ? (
+                        <embed
+                            src={cert.pdfSrc}
+                            type="application/pdf"
+                            className="w-full rounded-lg"
+                            style={{ height: "70vh", border: "1px solid #E5E7EB" }}
+                        />
+                    ) : cert.previewSrc ? (
+                        <img
+                            src={cert.previewSrc}
+                            alt={cert.alt}
+                            className="w-full h-auto rounded-lg"
+                            style={{ objectFit: "contain" }}
+                        />
+                    ) : null}
+                    {cert.pdfSrc && (
+                        <p className="text-xs text-gray-400 mt-3">
+                            If the certificate does not display above,{" "}
+                            <a
+                                href={cert.pdfSrc}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
+                                style={{ color: "#00B4D8" }}
+                            >
+                                open it in a new tab
+                            </a>
+                            .
+                        </p>
+                    )}
+                </div>
+            </div>
+        </div>
+    );
+}
+
 export default function AboutPage() {
-    const [expanded, setExpanded] = useState(false);
+    const [activeCert, setActiveCert] = useState<Certificate | null>(null);
 
     return (
         <div className="bg-white">
@@ -42,12 +163,12 @@ export default function AboutPage() {
                 </p>
             </section>
 
-            {/* TEAM PHOTO */}
+            {/* HERO IMAGE */}
             <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 mb-14">
                 <div className="rounded-3xl overflow-hidden" style={{ height: 380 }}>
                     <img
-                        src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=1400&q=85"
-                        alt="Team"
+                        src="/images/homepage/hero-cryogenic-systems-1.webp"
+                        alt="Stirling Cryogenics facility and cryogenic systems"
                         className="w-full h-full object-cover"
                     />
                 </div>
@@ -79,9 +200,9 @@ export default function AboutPage() {
                 <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                     <div className="rounded-2xl overflow-hidden" style={{ height: 340 }}>
                         <img
-                            src="https://images.unsplash.com/photo-1560250097-0dc05a977a8e?w=800&q=85"
-                            alt="Mr. Ashish Bhutani"
-                            className="w-full h-full object-cover object-top"
+                            src="/images/homepage/company-intro-ptc1000-cryocooler.webp"
+                            alt="Stirling Cryogenics cryocooler system"
+                            className="w-full h-full object-contain bg-[#F9FAFB]"
                         />
                     </div>
                     <div
@@ -100,6 +221,27 @@ export default function AboutPage() {
                         </p>
                         <p className="font-bold text-gray-900 text-sm">Mr. Ashish Bhutani</p>
                         <p className="text-sm" style={{ color: "#00B4D8" }}>Managing Director</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* OUR MISSION */}
+            <section className="py-10 px-4 sm:px-6 lg:px-8" style={{ background: "#F9FAFB" }}>
+                <div className="max-w-[1280px] mx-auto flex items-start gap-5">
+                    <div
+                        className="shrink-0 w-1 rounded-full self-stretch"
+                        style={{ background: "#00B4D8", minHeight: 80 }}
+                    />
+                    <div>
+                        <h2 className="font-bold text-gray-900 text-xl mb-4">Our Mission</h2>
+                        <p className="text-gray-600 text-sm leading-relaxed max-w-3xl">
+                            Our mission is to advance cryogenic technology in ways that improve human life,
+                            delivering reliable cryogenic services and solutions to research institutions,
+                            defence laboratories, and healthcare providers across India. We are proud to
+                            support the work of premier institutions such as IITs, IISERs, NITs, defence
+                            and CSIR laboratories, hospitals, and other specialised applications, providing
+                            dependable cryogenic systems for their most demanding requirements.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -127,8 +269,8 @@ export default function AboutPage() {
                     </div>
                     <div className="rounded-2xl overflow-hidden" style={{ height: 300 }}>
                         <img
-                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=85"
-                            alt="Team Vision"
+                            src="/images/homepage/industry-research.webp"
+                            alt="Cryogenic technology supporting research and industry"
                             className="w-full h-full object-cover"
                         />
                     </div>
@@ -213,8 +355,8 @@ export default function AboutPage() {
                     </div>
                     <div className="rounded-2xl overflow-hidden mb-8" style={{ height: 360 }}>
                         <img
-                            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1400&q=85"
-                            alt="Fabrum Partnership"
+                            src="/images/homepage/hero-liquid-nitrogen-plant.webp"
+                            alt="Fabrum Partnership — liquid nitrogen systems"
                             className="w-full h-full object-cover"
                         />
                     </div>
@@ -229,55 +371,156 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* CERTIFICATIONS */}
+            {/* TECHNOLOGY & INNOVATION */}
             <section className="py-14 px-4 sm:px-6 lg:px-8" style={{ background: "#F9FAFB" }}>
                 <div className="max-w-[1280px] mx-auto">
                     <div className="text-center mb-10">
-            <span
-                className="text-xs font-semibold uppercase tracking-widest"
-                style={{ color: "#00B4D8" }}
-            >
-              CERTIFICATIONS
-            </span>
+                        <span
+                            className="text-xs font-semibold uppercase tracking-widest"
+                            style={{ color: "#00B4D8" }}
+                        >
+                            OUR APPROACH
+                        </span>
                         <h2
                             className="font-bold text-gray-900 mt-2 mb-3"
                             style={{ fontSize: "clamp(1.5rem,3vw,2rem)" }}
                         >
-                            Certified &amp; Trusted
+                            Technology &amp; Innovation
+                        </h2>
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                        {[
+                            {
+                                icon: Award,
+                                title: "Innovative Techniques",
+                                desc: "Leveraging cutting-edge PSA technology and advanced engineering to deliver precise, efficient cryogenic solutions.",
+                            },
+                            {
+                                icon: Users,
+                                title: "Partnership Synergy",
+                                desc: "Our collaboration with Fabrum, New Zealand combines Indian market insight with global cryogenic expertise.",
+                            },
+                            {
+                                icon: Leaf,
+                                title: "Eco-Friendly Focus",
+                                desc: "Energy-efficient systems designed to minimise environmental impact while maximising reliable performance.",
+                            },
+                        ].map((c) => (
+                            <div
+                                key={c.title}
+                                className="bg-white rounded-2xl p-8 flex flex-col items-center text-center"
+                                style={{ border: "1px solid #E5E7EB", boxShadow: "0 4px 20px rgba(0,0,0,0.05)" }}
+                            >
+                                <div
+                                    className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
+                                    style={{ background: "rgba(0,180,216,0.1)" }}
+                                >
+                                    <c.icon className="w-5 h-5" style={{ color: "#00B4D8" }} strokeWidth={1.8} />
+                                </div>
+                                <h3 className="font-semibold text-gray-900 text-sm mb-2">{c.title}</h3>
+                                <p className="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* OUR PRODUCTS IN ACTION */}
+            <ProductsInAction />
+
+            {/* CERTIFIED & TRUSTED */}
+            <section className="py-14 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-[1280px] mx-auto">
+                    <div className="text-center mb-10">
+                        <span
+                            className="text-xs font-semibold uppercase tracking-widest"
+                            style={{ color: "#00B4D8" }}
+                        >
+                            CERTIFIED &amp; TRUSTED
+                        </span>
+                        <h2
+                            className="font-bold text-gray-900 mt-2 mb-3"
+                            style={{ fontSize: "clamp(1.5rem,3vw,2rem)" }}
+                        >
+                            Certifications That Reflect Our Commitment to Quality
                         </h2>
                         <p className="text-gray-500 text-sm max-w-md mx-auto leading-relaxed">
                             We follow industry standards and hold certifications that reflect our commitment to
                             quality, safety, and reliable performance.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-                        {CERTS.map((cert) => (
-                            <div
-                                key={cert.label}
-                                className="bg-white rounded-2xl p-8 flex flex-col items-center justify-center text-center"
-                                style={{
-                                    border: `1px solid ${cert.border}`,
-                                    boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
-                                    minHeight: 160,
-                                }}
-                            >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {CERTIFICATES.map((cert) => {
+                            const openable = Boolean(cert.pdfSrc || cert.previewSrc);
+                            return (
                                 <div
-                                    className="w-14 h-14 rounded-full flex items-center justify-center mb-4"
-                                    style={{ background: cert.color }}
+                                    key={cert.id}
+                                    className="bg-white rounded-2xl overflow-hidden flex flex-col"
+                                    style={{
+                                        border: `1px solid ${cert.border}`,
+                                        boxShadow: "0 4px 20px rgba(0,0,0,0.05)",
+                                    }}
                                 >
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FF6B35" strokeWidth="1.6">
-                                        <circle cx="12" cy="8" r="4" />
-                                        <path d="M8 21v-1a4 4 0 0 1 8 0v1" />
-                                        <path d="M16 11l1.5 5-5.5-2-5.5 2 1.5-5" />
-                                    </svg>
+                                    {cert.previewSrc ? (
+                                        <div
+                                            className="w-full flex items-center justify-center p-3"
+                                            style={{ height: 260, background: cert.color }}
+                                        >
+                                            <img
+                                                src={cert.previewSrc}
+                                                alt={cert.alt}
+                                                className="w-full h-full"
+                                                style={{ objectFit: "contain" }}
+                                            />
+                                        </div>
+                                    ) : (
+                                        <div
+                                            className="w-full flex items-center justify-center"
+                                            style={{ height: 160, background: cert.color }}
+                                        >
+                                            <Award className="w-12 h-12" style={{ color: "#00B4D8" }} strokeWidth={1.5} />
+                                        </div>
+                                    )}
+                                    <div className="p-6 flex flex-col flex-1">
+                                        <p className="font-semibold text-gray-900 text-sm mb-1">{cert.title}</p>
+                                        <p className="text-xs text-gray-500 mb-3">{cert.issuer}</p>
+                                        {cert.meta.length > 0 && (
+                                            <dl className="space-y-1 mb-4">
+                                                {cert.meta.map((m) => (
+                                                    <div key={m.label} className="flex justify-between text-xs gap-2">
+                                                        <dt className="text-gray-400">{m.label}</dt>
+                                                        <dd className="text-gray-700 font-medium text-right">{m.value}</dd>
+                                                    </div>
+                                                ))}
+                                            </dl>
+                                        )}
+                                        <div className="mt-auto pt-2">
+                                            {openable ? (
+                                                <button
+                                                    onClick={() => setActiveCert(cert)}
+                                                    className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
+                                                    style={{ color: "#00B4D8" }}
+                                                >
+                                                    View Certificate
+                                                </button>
+                                            ) : (
+                                                <span className="text-xs text-gray-400">Certified</span>
+                                            )}
+                                        </div>
+                                    </div>
                                 </div>
-                                <p className="font-semibold text-gray-800 text-sm">{cert.label}</p>
-                                <p className="text-xs text-gray-400 mt-1">Certified</p>
-                            </div>
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
             </section>
+
+            {activeCert && (
+                <CertificateModal cert={activeCert} onClose={() => setActiveCert(null)} />
+            )}
+
+            {/* INDUSTRIES WE SERVE */}
+            <Applications />
 
             {/* OUR PRESENCE / MAP */}
             <section className="py-14 px-4 sm:px-6 lg:px-8">
