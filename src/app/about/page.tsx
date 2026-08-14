@@ -26,6 +26,46 @@ interface Certificate {
 
 const CERTIFICATES: Certificate[] = [
     {
+        id: "msme-udyam",
+        title: "MSME Udyam Registration",
+        issuer: "Ministry of Micro, Small and Medium Enterprises, Government of India",
+        meta: [
+            { label: "Udyam Registration No.", value: "UDYAM-UP-28-0010634" },
+        ],
+        previewSrc: "/certificates/msme-udyam-registration.jpg",
+        pdfSrc: null,
+        alt: "MSME Udyam Registration certificate issued to Stirling Cryogenics India Private Limited",
+        color: "#F0FDF4",
+        border: "#BBF7D0",
+    },
+    {
+        id: "iso-9001",
+        title: "ISO 9001:2015 Certification",
+        issuer: "SM Certification Services",
+        meta: [
+            { label: "Certificate No.", value: "QMS210080" },
+            { label: "Issued", value: "15th March 2021" },
+        ],
+        previewSrc: "/certificates/iso-9001-2015-certificate.jpg",
+        pdfSrc: null,
+        alt: "ISO 9001:2015 Certificate of Registration awarded to Stirling Cryogenics India",
+        color: "#EFF6FF",
+        border: "#BFDBFE",
+    },
+    {
+        id: "certificate-of-incorporation",
+        title: "Certificate of Incorporation",
+        issuer: "Registrar of Companies, NCT of Delhi & Haryana",
+        meta: [
+            { label: "No.", value: "U74999DL2002PTC117410" },
+        ],
+        previewSrc: "/certificates/certificate-of-incorporation.jpg",
+        pdfSrc: null,
+        alt: "Certificate of Incorporation issued to Stirling Cryogenics India Private Limited",
+        color: "#FEF9F3",
+        border: "#FDE6C8",
+    },
+    {
         id: "msme-zed-gold",
         title: "MSME Sustainable (ZED) Certification — Gold",
         issuer: "Ministry of Micro, Small & Medium Enterprises",
@@ -39,28 +79,6 @@ const CERTIFICATES: Certificate[] = [
         alt: "MSME ZED Gold Certification awarded to Stirling Cryogenics India",
         color: "#FFF7ED",
         border: "#FED7AA",
-    },
-    {
-        id: "msme-udyam",
-        title: "MSME-Udyam Registration",
-        issuer: "Ministry of Micro, Small & Medium Enterprises",
-        meta: [],
-        previewSrc: null,
-        pdfSrc: null,
-        alt: "MSME Udyam registration certification",
-        color: "#F0FDF4",
-        border: "#BBF7D0",
-    },
-    {
-        id: "iso-9001",
-        title: "ISO 9001:2015",
-        issuer: "Quality Management System",
-        meta: [],
-        previewSrc: null,
-        pdfSrc: null,
-        alt: "ISO 9001:2015 quality management certification",
-        color: "#EFF6FF",
-        border: "#BFDBFE",
     },
 ];
 
@@ -170,27 +188,37 @@ export default function AboutPage() {
                         src="/images/homepage/hero-cryogenic-systems-1.webp"
                         alt="Stirling Cryogenics facility and cryogenic systems"
                         className="w-full h-full object-cover"
+                        style={{ objectPosition: "center bottom" }}
                     />
                 </div>
             </div>
 
-            {/* OUR STORY */}
+            {/* ABOUT US */}
             <section className="py-10 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-[1280px] mx-auto flex items-start gap-5">
-                    <div
-                        className="shrink-0 w-1 rounded-full self-stretch"
-                        style={{ background: "#00B4D8", minHeight: 80 }}
-                    />
-                    <div>
-                        <h2 className="font-bold text-gray-900 text-xl mb-4">Our Story</h2>
-                        <p className="text-gray-600 text-sm leading-relaxed max-w-3xl">
-                            Stirling Cryogenics, established in 1955, excels in advanced cryogenic solutions with a
-                            rich legacy of innovation and over 700 installations across India. In partnership with
-                            Fabrum, New Zealand, we specialise in state-of-the-art nitrogen and oxygen generators,
-                            leveraging cutting-edge PSA technology. Our commitment to excellence and adaptation to
-                            market needs positions us as a leader in cryogenic technology, dedicated to delivering
-                            reliable, bespoke solutions.
-                        </p>
+                <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div className="flex items-start gap-5">
+                        <div
+                            className="shrink-0 w-1 rounded-full self-stretch"
+                            style={{ background: "#00B4D8", minHeight: 80 }}
+                        />
+                        <div>
+                            <h2 className="font-bold text-gray-900 text-xl mb-4">About Us</h2>
+                            <p className="text-gray-600 text-sm leading-relaxed max-w-3xl">
+                                Stirling Cryogenics, established in 1955, excels in advanced cryogenic solutions with a
+                                rich legacy of innovation and over 700 installations across India. In partnership with
+                                Fabrum, New Zealand, we specialise in state-of-the-art nitrogen and oxygen generators,
+                                leveraging cutting-edge PSA technology. Our commitment to excellence and adaptation to
+                                market needs positions us as a leader in cryogenic technology, dedicated to delivering
+                                reliable, bespoke solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="rounded-2xl overflow-hidden" style={{ aspectRatio: "1024 / 694" }}>
+                        <img
+                            src="/images/about/about-us-facility.jpg"
+                            alt="Stirling Cryogenics manufacturing facility"
+                            className="w-full h-full object-cover"
+                        />
                     </div>
                 </div>
             </section>
@@ -198,11 +226,12 @@ export default function AboutPage() {
             {/* MD PROFILE */}
             <section className="py-10 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div className="rounded-2xl overflow-hidden" style={{ height: 340 }}>
+                    <div className="rounded-2xl overflow-hidden" style={{ aspectRatio: "1024 / 681" }}>
                         <img
-                            src="/images/homepage/company-intro-ptc1000-cryocooler.webp"
-                            alt="Stirling Cryogenics cryocooler system"
-                            className="w-full h-full object-contain bg-[#F9FAFB]"
+                            src="/images/about/managing-director-ashish-bhutani.jpeg"
+                            alt="Mr. Ashish Bhutani, Managing Director of Stirling Cryogenics India"
+                            className="w-full h-full object-cover"
+                            style={{ objectPosition: "center top" }}
                         />
                     </div>
                     <div
@@ -227,21 +256,30 @@ export default function AboutPage() {
 
             {/* OUR MISSION */}
             <section className="py-10 px-4 sm:px-6 lg:px-8" style={{ background: "#F9FAFB" }}>
-                <div className="max-w-[1280px] mx-auto flex items-start gap-5">
-                    <div
-                        className="shrink-0 w-1 rounded-full self-stretch"
-                        style={{ background: "#00B4D8", minHeight: 80 }}
-                    />
-                    <div>
-                        <h2 className="font-bold text-gray-900 text-xl mb-4">Our Mission</h2>
-                        <p className="text-gray-600 text-sm leading-relaxed max-w-3xl">
-                            Our mission is to advance cryogenic technology in ways that improve human life,
-                            delivering reliable cryogenic services and solutions to research institutions,
-                            defence laboratories, and healthcare providers across India. We are proud to
-                            support the work of premier institutions such as IITs, IISERs, NITs, defence
-                            and CSIR laboratories, hospitals, and other specialised applications, providing
-                            dependable cryogenic systems for their most demanding requirements.
-                        </p>
+                <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div className="flex items-start gap-5">
+                        <div
+                            className="shrink-0 w-1 rounded-full self-stretch"
+                            style={{ background: "#00B4D8", minHeight: 80 }}
+                        />
+                        <div>
+                            <h2 className="font-bold text-gray-900 text-xl mb-4">Our Mission</h2>
+                            <p className="text-gray-600 text-sm leading-relaxed max-w-3xl">
+                                Our mission is to advance cryogenic technology in ways that improve human life,
+                                delivering reliable cryogenic services and solutions to research institutions,
+                                defence laboratories, and healthcare providers across India. We are proud to
+                                support the work of premier institutions such as IITs, IISERs, NITs, defence
+                                and CSIR laboratories, hospitals, and other specialised applications, providing
+                                dependable cryogenic systems for their most demanding requirements.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="rounded-2xl overflow-hidden" style={{ aspectRatio: "1600 / 1064" }}>
+                        <img
+                            src="/images/about/mission-cryogenic-technology.jpg"
+                            alt="Cryogenic technology supporting Stirling Cryogenics' mission"
+                            className="w-full h-full object-cover"
+                        />
                     </div>
                 </div>
             </section>
@@ -313,14 +351,16 @@ export default function AboutPage() {
                         Our growth is built on consistent performance, trusted relationships, and the
                         successful delivery of cryogenic systems.
                     </p>
-                    <div className="flex flex-wrap justify-center max-w-3xl mx-auto">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 lg:flex-nowrap justify-center max-w-[1280px] mx-auto gap-x-2 gap-y-8 lg:gap-x-0">
                         {STATS.map((s, i) => (
                             <div
                                 key={s.label}
-                                className="flex flex-col items-center justify-center py-6 px-8 text-center"
+                                className={`flex flex-col items-center justify-center py-6 px-3 lg:px-6 text-center ${
+                                    i < STATS.length - 1 ? "lg:border-r" : ""
+                                }`}
                                 style={{
-                                    borderRight: i < STATS.length - 1 ? "1px solid rgba(255,100,60,0.2)" : "none",
-                                    minWidth: 120,
+                                    borderColor:
+                                        i < STATS.length - 1 ? "rgba(255,100,60,0.2)" : "transparent",
                                 }}
                             >
                                 <p
@@ -353,7 +393,10 @@ export default function AboutPage() {
                             Global Partnership with Fabrum
                         </h2>
                     </div>
-                    <div className="rounded-2xl overflow-hidden mb-8" style={{ height: 360 }}>
+                    <div
+                        className="rounded-2xl overflow-hidden mb-8 max-w-3xl mx-auto"
+                        style={{ aspectRatio: "724 / 450" }}
+                    >
                         <img
                             src="/images/homepage/hero-liquid-nitrogen-plant.webp"
                             alt="Fabrum Partnership — liquid nitrogen systems"
@@ -449,9 +492,16 @@ export default function AboutPage() {
                             quality, safety, and reliable performance.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         {CERTIFICATES.map((cert) => {
                             const openable = Boolean(cert.pdfSrc || cert.previewSrc);
+                            const handleView = () => {
+                                if (cert.pdfSrc) {
+                                    window.open(cert.pdfSrc, "_blank", "noopener,noreferrer");
+                                } else {
+                                    setActiveCert(cert);
+                                }
+                            };
                             return (
                                 <div
                                     key={cert.id}
@@ -463,8 +513,8 @@ export default function AboutPage() {
                                 >
                                     {cert.previewSrc ? (
                                         <div
-                                            className="w-full flex items-center justify-center p-3"
-                                            style={{ height: 260, background: cert.color }}
+                                            className="w-full flex items-center justify-center p-4"
+                                            style={{ height: 380, background: cert.color }}
                                         >
                                             <img
                                                 src={cert.previewSrc}
@@ -497,7 +547,7 @@ export default function AboutPage() {
                                         <div className="mt-auto pt-2">
                                             {openable ? (
                                                 <button
-                                                    onClick={() => setActiveCert(cert)}
+                                                    onClick={handleView}
                                                     className="inline-flex items-center gap-2 text-sm font-semibold rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#00B4D8] focus-visible:ring-offset-2"
                                                     style={{ color: "#00B4D8" }}
                                                 >
